@@ -17,15 +17,12 @@ Es necesario añadir archivos al repositorio de GitHub, no subidos a la platafor
 ./Library
 ```
 
-### Carpetas de Audio y Sprites
+### Carpetas de Sprites
 - Enlace: https://mega.nz/file/4ItSGYBa#-m2OtZHqUvSfaS79O4A-I8ax5HcZ0cR2_yzahi2tHVc
 - Última actualización: 24/10/2024, 14:20. [Material de *Proyecto 3. App interactiva*]
 - Ubicación: Dentro de la carpeta *Assets*.
 ```
-./Assets/Audio
-./Assets/Audio.meta
 ./Assets/Sprites
-./Assets/Sprites.meta
 ```
 
 
