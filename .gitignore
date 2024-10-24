@@ -70,6 +70,3 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
-
-# Sprites and Audio folders (aside folder - please, check README)
-/[Aa]ssets/[Ss]prites/
