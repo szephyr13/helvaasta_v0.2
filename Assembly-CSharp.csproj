@@ -65,7 +65,6 @@
     <Compile Include="Assets/Scripts/Text/Boundary.cs" />
     <Compile Include="Assets/Scripts/Text/DialogueOnMap.cs" />
     <Compile Include="Assets/Scripts/Text/ConversationPart.cs" />
-    <Compile Include="Assets/Scripts/Text/HouseInteraction.cs" />
     <Compile Include="Assets/Scripts/Player/NemoStartPosition.cs" />
     <Compile Include="Assets/Scripts/Menu/OptionsMenu.cs" />
     <Compile Include="Assets/Scripts/Audio/AudioManager.cs" />
@@ -442,7 +441,7 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
-      <HintPath>Library/PackageCache/com.unity.visualscripting@1.9.5/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+      <HintPath>Library/PackageCache/com.unity.visualscripting@1.9.1/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
