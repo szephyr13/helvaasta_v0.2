@@ -3,42 +3,51 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 
-
-//VARIANTE DE DIALOGUEONMAP PARA EL TELÉFONO
-public class TelephoneInteraction : MonoBehaviour
+//VARIANTE DE DIALOGUEONMAP PARA OBJETOS
+public class HouseInteraction : MonoBehaviour
 {
     private bool rangeTrigger;
     private bool didDialogueStart = false;
     private int lineIndex;
     private float textSpeed = 0.05f;
 
-    [SerializeField] public bool alreadyInformed;
-    public GameObject dialogueUI;
-    public GameObject characterPlaceholder;
-    public TMP_Text characterName;
-    public TMP_Text sentenceField;
-    public GameObject nextArrow;
-    public GameObject interactButton;
-    public ConversationPart[] firstTelephone;
-    public ConversationPart[] nextTelephone;
-    public ConversationPart[] currentInteraction;
+    [SerializeField] private GameObject telephoneGameObject;
+    private TelephoneInteraction telephoneScript;
 
-    //se determina que la interacción actual es la primera (al inicio)
-    void Start(){
-        currentInteraction = firstTelephone;
-        alreadyInformed = false;
+    [SerializeField] private GameObject dialogueUI;
+    [SerializeField] private GameObject characterPlaceholder;
+    [SerializeField] private TMP_Text characterName;
+    [SerializeField] private TMP_Text sentenceField;
+    [SerializeField] private GameObject nextArrow;
+    [SerializeField] private GameObject interactButton;
+    [SerializeField] private ConversationPart[] beforeTelephoneText;
+    [SerializeField] private ConversationPart[] cantEnter;
+    [SerializeField] private ConversationPart[] interactionText;
+
+
+    private void Start()
+    {
+        telephoneScript = telephoneGameObject.GetComponent<TelephoneInteraction>();
     }
 
-    //en cada update se comprueba si se está en el rango de trigger y se pulsa el botón de interacción.
-    //siendo así, se inicia el diálogo y se tiene en cuenta si el texto se ha terminado de escribir o no
+    //en cada update se comprueba si se ha pulsado la tecla de click
+    //si se está en el rango de trigger de un objeto, la función inicia el cuadro de diálogo y tiene en cuenta si la frase se ha terminado de escribir o no
     void Update(){
         if (rangeTrigger) {
             //interactButton.SetActive(true);
             if (Input.GetButtonDown("Fire1")){
                 if (!didDialogueStart){
                     AudioManager.instance.PlaySFX("UI-Click");
+                    if (telephoneScript.alreadyInformed)
+                    {
+                        interactionText = cantEnter;
+                    }
+                    else
+                    {
+                        interactionText = beforeTelephoneText;
+                    }
                     StartDialogue();
-                } else if (sentenceField.text == currentInteraction[lineIndex].currentSentence) {
+                } else if (sentenceField.text == interactionText[lineIndex].currentSentence) {
                     nextArrow.SetActive(true);
                     if (Input.GetButtonDown("Fire1")){
                         AudioManager.instance.PlaySFX("UI-Click");
@@ -49,7 +58,7 @@ public class TelephoneInteraction : MonoBehaviour
                     if (Input.GetButtonDown("Fire1")){
                         AudioManager.instance.PlaySFX("UI-Click");
                         StopAllCoroutines();
-                        sentenceField.text = currentInteraction[lineIndex].currentSentence;
+                        sentenceField.text = interactionText[lineIndex].currentSentence;
                     }
                 }
             }
@@ -70,26 +79,23 @@ public class TelephoneInteraction : MonoBehaviour
     //se van añadiendo líneas, que se fragmentan con la corrutina hasta que se termina el repositorio de líneas
     private void NextDialogueLine(){
         lineIndex++;
-        if (lineIndex < currentInteraction.Length){
+        if (lineIndex < interactionText.Length){
             StartCoroutine(ShowLine());
         } else {
             didDialogueStart = false;
             dialogueUI.SetActive(false);
             Time.timeScale = 1f;
-            alreadyInformed = true;
-            currentInteraction = nextTelephone;
         }
     }
 
     //Corrutina para ir mostrando las letras con efecto de tipeo
     private IEnumerator ShowLine(){
-        characterName.text = currentInteraction[lineIndex].characterName;
-        characterPlaceholder.GetComponent<Image>().sprite = currentInteraction[lineIndex].faceSprite;
+        characterName.text = interactionText[lineIndex].characterName;
+        characterPlaceholder.GetComponent<Image>().sprite = interactionText[lineIndex].faceSprite;
         sentenceField.text = string.Empty;
 
-        foreach (char ch in currentInteraction[lineIndex].currentSentence) {
+        foreach (char ch in interactionText[lineIndex].currentSentence) {
             sentenceField.text += ch;
-            AudioManager.instance.PlaySFX("Voice-" + currentInteraction[lineIndex].characterName);
             yield return new WaitForSecondsRealtime(textSpeed);
         }
     }

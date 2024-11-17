@@ -91,6 +91,7 @@ public class DialogueOnMap : MonoBehaviour
             didDialogueStart = false;
             dialogueUI.SetActive(false);
             firstEntrance = false;
+            Destroy(this.GetComponent<BoxCollider2D>());
             Time.timeScale = 1f;
             timeToGo = true;
         }

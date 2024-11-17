@@ -1098,7 +1098,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -10
   m_Sprite: {fileID: 4611556107499576972, guid: 955c89f88c1ce456c9e1d9ff01f78952, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1545,8 +1545,8 @@ Transform:
   m_GameObject: {fileID: 499447673}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -48.03, y: 6.27, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -48.03, y: 3.51, z: 0}
+  m_LocalScale: {x: 1, y: 0.5625, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 201284010}
@@ -2168,15 +2168,12 @@ MonoBehaviour:
   interactButton: {fileID: 1976656729}
   interactionText:
   - characterName: Nemo
-    faceSprite: {fileID: 21300000, guid: 056a3dfb394a240038fff36e2a397905, type: 3}
-    currentSentence: (Desde luego, no estoy al norte de la plaza.)
-  - characterName: Nemo
-    faceSprite: {fileID: 21300000, guid: 056a3dfb394a240038fff36e2a397905, type: 3}
-    currentSentence: "(Visto el camino hacia el bosque... \xBFser\xE1 la casa del
-      le\xF1ador?)"
+    faceSprite: {fileID: 21300000, guid: 65d3a420264124d3ba6dbc2df85ea5bd, type: 3}
+    currentSentence: "(Deber\xEDa informar al inspector de que he llegado a Helvaasta.)"
   - characterName: Nemo
     faceSprite: {fileID: 21300000, guid: 65d3a420264124d3ba6dbc2df85ea5bd, type: 3}
-    currentSentence: "(Quiz\xE1 deber\xEDa leer el cartel.)"
+    currentSentence: "(El tel\xE9fono est\xE1 en la plaza, cerca de la entrada del
+      pueblo.)"
 --- !u!70 &707114840
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -2319,6 +2316,190 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 2.4526672, y: 3.073265}
+  m_EdgeRadius: 0
+--- !u!1 &764523979
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 764523980}
+  - component: {fileID: 764523983}
+  - component: {fileID: 764523982}
+  - component: {fileID: 764523981}
+  m_Layer: 0
+  m_Name: IntroductionTrigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &764523980
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 764523979}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -32.56, y: -12.4, z: 0}
+  m_LocalScale: {x: 2.2375, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1243606406}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &764523981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 764523979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d613acd5350264859a6d4dd5ead32576, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firstEntrance: 1
+  nextInteraction: 0
+  dialogueUI: {fileID: 1401427418}
+  characterPlaceholder: {fileID: 1344209367}
+  characterName: {fileID: 769993888}
+  sentenceField: {fileID: 1312241146}
+  nextArrow: {fileID: 826633206}
+  initialConversation:
+  - characterName: Nemo
+    faceSprite: {fileID: 21300000, guid: 65d3a420264124d3ba6dbc2df85ea5bd, type: 3}
+    currentSentence: ...
+  - characterName: Nemo
+    faceSprite: {fileID: 21300000, guid: 65d3a420264124d3ba6dbc2df85ea5bd, type: 3}
+    currentSentence: "(Ah\xED est\xE1 Helvaasta. Deber\xEDa presentarme a los guardias.)"
+  - characterName: Vigilante 1
+    faceSprite: {fileID: 21300000, guid: 8ecedaae2c8ff48e0bf45ab411b02f48, type: 3}
+    currentSentence: "Helvaasta est\xE1 aislada. Identificaci\xF3n."
+  - characterName: Nemo
+    faceSprite: {fileID: 21300000, guid: 65d3a420264124d3ba6dbc2df85ea5bd, type: 3}
+    currentSentence: "Soy el detective Nemo, de la polic\xEDa de Breonstl. Vengo
+      a investigar el caso del ni\xF1o desaparecido."
+  - characterName: Vigilante 2
+    faceSprite: {fileID: 21300000, guid: 8ecedaae2c8ff48e0bf45ab411b02f48, type: 3}
+    currentSentence: La placa.
+  - characterName: Nemo
+    faceSprite: {fileID: 21300000, guid: 65d3a420264124d3ba6dbc2df85ea5bd, type: 3}
+    currentSentence: ...
+  - characterName: Vigilante 2
+    faceSprite: {fileID: 21300000, guid: 8ecedaae2c8ff48e0bf45ab411b02f48, type: 3}
+    currentSentence: Correcto.
+  - characterName: Vigilante 1
+    faceSprite: {fileID: 21300000, guid: 8ecedaae2c8ff48e0bf45ab411b02f48, type: 3}
+    currentSentence: "Hay un tel\xE9fono p\xFAblico al este de la plaza, a la que
+      llegar\xE1 tomando el camino de la derecha. "
+  - characterName: Vigilante 1
+    faceSprite: {fileID: 21300000, guid: 8ecedaae2c8ff48e0bf45ab411b02f48, type: 3}
+    currentSentence: "La reconocer\xE1 porque tiene un \xE1rbol en su centro."
+  - characterName: Vigilante 1
+    faceSprite: {fileID: 21300000, guid: 8ecedaae2c8ff48e0bf45ab411b02f48, type: 3}
+    currentSentence: "El tel\xE9fono est\xE1 algo oxidado, pero todav\xEDa cumple
+      su cometido. Es mejor que utilice ese y no le pida a la mujer de la posada
+      el suyo. No se lo dejar\xE1 usar. "
+  - characterName: Vigilante 1
+    faceSprite: {fileID: 21300000, guid: 8ecedaae2c8ff48e0bf45ab411b02f48, type: 3}
+    currentSentence: "La gente de aqu\xED es hura\xF1a y mentirosa, detective. No
+      se f\xEDe de nadie. Un joven ya trat\xF3 de escaparse diciendo que no es residente,
+      pero tenemos su ficha. "
+  - characterName: Vigilante 1
+    faceSprite: {fileID: 21300000, guid: 8ecedaae2c8ff48e0bf45ab411b02f48, type: 3}
+    currentSentence: "\xBFHasta qu\xE9 hora estar\xE1 aqu\xED?"
+  - characterName: Nemo
+    faceSprite: {fileID: 21300000, guid: 65d3a420264124d3ba6dbc2df85ea5bd, type: 3}
+    currentSentence: "Tengo \xF3rdenes de estar de nuevo en comisar\xEDa antes de
+      que acabe el d\xEDa. Deber\xEDa salir de aqu\xED a las diez de la noche. "
+  - characterName: Vigilante 1
+    faceSprite: {fileID: 21300000, guid: 8ecedaae2c8ff48e0bf45ab411b02f48, type: 3}
+    currentSentence: "Muy bien. Le esperaremos y volver\xE1 con nosotros durante
+      nuestro cambio de turno. Inf\xF3rmenos en cuanto acabe. "
+  - characterName: Vigilante 1
+    faceSprite: {fileID: 21300000, guid: 8ecedaae2c8ff48e0bf45ab411b02f48, type: 3}
+    currentSentence: "Si tiene alg\xFAn problema, no dude en hablar con nosotros.
+      Nos encargaremos de poner a la gente en su sitio como sea necesario. "
+  - characterName: Nemo
+    faceSprite: {fileID: 21300000, guid: 65d3a420264124d3ba6dbc2df85ea5bd, type: 3}
+    currentSentence: "Gracias, se\xF1ores. Un placer. "
+  downBoundary: []
+--- !u!50 &764523982
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 764523979}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!61 &764523983
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 764523979}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &769993888 stripped
 MonoBehaviour:
@@ -2713,11 +2894,11 @@ MonoBehaviour:
   interactionText:
   - characterName: Nemo
     faceSprite: {fileID: 21300000, guid: 65d3a420264124d3ba6dbc2df85ea5bd, type: 3}
-    currentSentence: "(Si esto es una casa, tiene que ser se\xF1orial. Debe de ser
-      la posada.)"
+    currentSentence: "(Deber\xEDa informar al inspector de que he llegado a Helvaasta.)"
   - characterName: Nemo
     faceSprite: {fileID: 21300000, guid: 65d3a420264124d3ba6dbc2df85ea5bd, type: 3}
-    currentSentence: "(Quiz\xE1 deber\xEDa mirar el cartel.)"
+    currentSentence: "(El tel\xE9fono est\xE1 en la plaza, cerca de la entrada del
+      pueblo.)"
 --- !u!61 &854753623
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3107,7 +3288,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2606601052316869085, guid: 81318ded4ea6b4d94b78ffbde8b74a7b, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2748623369150421058, guid: 81318ded4ea6b4d94b78ffbde8b74a7b, type: 3}
       propertyPath: m_Name
@@ -4137,6 +4318,39 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
+--- !u!1 &1243606405
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1243606406}
+  m_Layer: 0
+  m_Name: StartTriggers
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1243606406
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1243606405}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 32.547714, y: 20.904047, z: -0.57849014}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 764523980}
+  - {fileID: 1782392521}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1255272849
 GameObject:
   m_ObjectHideFlags: 0
@@ -5872,11 +6086,11 @@ Transform:
   m_GameObject: {fileID: 1782392520}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -45.72, y: 32.42, z: 0.039935585}
+  m_LocalPosition: {x: -32.267715, y: 1.5159512, z: 0.6184257}
   m_LocalScale: {x: 3.7125, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 201284010}
+  m_Father: {fileID: 1243606406}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1782392522
 BoxCollider2D:
@@ -5974,6 +6188,9 @@ MonoBehaviour:
     faceSprite: {fileID: 21300000, guid: 4ea6a4ec762104ae9813f9a2bbe015b8, type: 3}
     currentSentence: "(Si no me equivoco, la plaza est\xE1 por ah\xED, por el camino
       de la derecha.)"
+  - characterName: Nemo
+    faceSprite: {fileID: 21300000, guid: 4ea6a4ec762104ae9813f9a2bbe015b8, type: 3}
+    currentSentence: "(Deber\xEDa informar de mi llegada.)"
   downBoundary: []
 --- !u!1 &1784202025 stripped
 GameObject:
@@ -6624,40 +6841,37 @@ PrefabInstance:
     - {fileID: -8171111747148254315, guid: 955c89f88c1ce456c9e1d9ff01f78952, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: -7552582706839291426, guid: 955c89f88c1ce456c9e1d9ff01f78952, type: 3}
-      insertIndex: 0
-      addedObject: {fileID: 1782392521}
-    - targetCorrespondingSourceObject: {fileID: -7552582706839291426, guid: 955c89f88c1ce456c9e1d9ff01f78952, type: 3}
-      insertIndex: 6
+      insertIndex: 5
       addedObject: {fileID: 1130503142}
     - targetCorrespondingSourceObject: {fileID: -7552582706839291426, guid: 955c89f88c1ce456c9e1d9ff01f78952, type: 3}
-      insertIndex: 10
+      insertIndex: 9
       addedObject: {fileID: 973037417}
     - targetCorrespondingSourceObject: {fileID: -7552582706839291426, guid: 955c89f88c1ce456c9e1d9ff01f78952, type: 3}
-      insertIndex: 12
+      insertIndex: 11
       addedObject: {fileID: 45984889}
     - targetCorrespondingSourceObject: {fileID: -7552582706839291426, guid: 955c89f88c1ce456c9e1d9ff01f78952, type: 3}
-      insertIndex: 13
+      insertIndex: 12
       addedObject: {fileID: 1673996132}
     - targetCorrespondingSourceObject: {fileID: -7552582706839291426, guid: 955c89f88c1ce456c9e1d9ff01f78952, type: 3}
-      insertIndex: 14
+      insertIndex: 13
       addedObject: {fileID: 1184900590}
     - targetCorrespondingSourceObject: {fileID: -7552582706839291426, guid: 955c89f88c1ce456c9e1d9ff01f78952, type: 3}
-      insertIndex: 15
+      insertIndex: 14
       addedObject: {fileID: 1209086436}
     - targetCorrespondingSourceObject: {fileID: -7552582706839291426, guid: 955c89f88c1ce456c9e1d9ff01f78952, type: 3}
-      insertIndex: 16
+      insertIndex: 15
       addedObject: {fileID: 1872418812}
     - targetCorrespondingSourceObject: {fileID: -7552582706839291426, guid: 955c89f88c1ce456c9e1d9ff01f78952, type: 3}
-      insertIndex: 17
+      insertIndex: 16
       addedObject: {fileID: 1988254583}
     - targetCorrespondingSourceObject: {fileID: -7552582706839291426, guid: 955c89f88c1ce456c9e1d9ff01f78952, type: 3}
-      insertIndex: 18
+      insertIndex: 17
       addedObject: {fileID: 1902272805}
     - targetCorrespondingSourceObject: {fileID: -7552582706839291426, guid: 955c89f88c1ce456c9e1d9ff01f78952, type: 3}
-      insertIndex: 19
+      insertIndex: 18
       addedObject: {fileID: 37512448}
     - targetCorrespondingSourceObject: {fileID: -7552582706839291426, guid: 955c89f88c1ce456c9e1d9ff01f78952, type: 3}
-      insertIndex: 53
+      insertIndex: 52
       addedObject: {fileID: 327600259}
     - targetCorrespondingSourceObject: {fileID: -7552582706839291426, guid: 955c89f88c1ce456c9e1d9ff01f78952, type: 3}
       insertIndex: -1
@@ -7101,9 +7315,12 @@ MonoBehaviour:
   interactButton: {fileID: 1976656729}
   interactionText:
   - characterName: Nemo
-    faceSprite: {fileID: 21300000, guid: 5ccaadcddd534426bbd87bfc1b3bbfd6, type: 3}
-    currentSentence: "(Qu\xE9 peste a alcohol\u2026 No creo que esto sea la casa
-      de la curandera. Quiz\xE1 deber\xEDa echarle un vistazo al cartel.)"
+    faceSprite: {fileID: 21300000, guid: 65d3a420264124d3ba6dbc2df85ea5bd, type: 3}
+    currentSentence: "(Deber\xEDa informar al inspector de que he llegado a Helvaasta.)"
+  - characterName: Nemo
+    faceSprite: {fileID: 21300000, guid: 65d3a420264124d3ba6dbc2df85ea5bd, type: 3}
+    currentSentence: "(El tel\xE9fono est\xE1 en la plaza, cerca de la entrada del
+      pueblo.)"
 --- !u!61 &1934921552
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8087,7 +8304,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 83067507807897074, guid: d74886157c9a84262b63b93945dd5b0a, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -8206,6 +8424,7 @@ SceneRoots:
   - {fileID: 619394802}
   - {fileID: 839078946}
   - {fileID: 1558561219}
+  - {fileID: 1243606406}
   - {fileID: 1885217865}
   - {fileID: 5834248985860365727}
   - {fileID: 412941461}
