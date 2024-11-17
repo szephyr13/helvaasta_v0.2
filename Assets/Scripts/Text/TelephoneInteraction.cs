@@ -12,6 +12,7 @@ public class TelephoneInteraction : MonoBehaviour
     private int lineIndex;
     private float textSpeed = 0.05f;
 
+    [SerializeField] public bool alreadyInformed;
     public GameObject dialogueUI;
     public GameObject characterPlaceholder;
     public TMP_Text characterName;
@@ -25,6 +26,7 @@ public class TelephoneInteraction : MonoBehaviour
     //se determina que la interacción actual es la primera (al inicio)
     void Start(){
         currentInteraction = firstTelephone;
+        alreadyInformed = false;
     }
 
     //en cada update se comprueba si se está en el rango de trigger y se pulsa el botón de interacción.
@@ -74,6 +76,7 @@ public class TelephoneInteraction : MonoBehaviour
             didDialogueStart = false;
             dialogueUI.SetActive(false);
             Time.timeScale = 1f;
+            alreadyInformed = true;
             currentInteraction = nextTelephone;
         }
     }

@@ -7,20 +7,20 @@ using UnityEngine.UI;
 public class DialogueOnMap : MonoBehaviour
 {
     private bool rangeTrigger;
-    public bool firstEntrance;
+    [SerializeField] private bool firstEntrance;
+    [SerializeField] private bool nextInteraction;
     private bool timeToGo;
-    public bool nextInteraction;
     private bool didDialogueStart = false;
     private int lineIndex;
     private float textSpeed = 0.05f;
 
-    public GameObject dialogueUI;
-    public GameObject characterPlaceholder;
-    public TMP_Text characterName;
-    public TMP_Text sentenceField;
-    public GameObject nextArrow;
-    public ConversationPart[] initialConversation;
-    public ConversationPart[] downBoundary;
+    [SerializeField] private GameObject dialogueUI;
+    [SerializeField] private GameObject characterPlaceholder;
+    [SerializeField] private TMP_Text characterName;
+    [SerializeField] private TMP_Text sentenceField;
+    [SerializeField] private GameObject nextArrow;
+    [SerializeField] private ConversationPart[] initialConversation;
+    [SerializeField] private ConversationPart[] downBoundary;
 
     //al iniciar, se indica que se va a tener la primera conversación (firstEntrance) y que se iniciará la conversación según se entre en la zona de trigger (timeToGo)
     void Awake() {
@@ -91,6 +91,7 @@ public class DialogueOnMap : MonoBehaviour
             didDialogueStart = false;
             dialogueUI.SetActive(false);
             firstEntrance = false;
+            Destroy(this.GetComponent<BoxCollider2D>());
             Time.timeScale = 1f;
             timeToGo = true;
         }
