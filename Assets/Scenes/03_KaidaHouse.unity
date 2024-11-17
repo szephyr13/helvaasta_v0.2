@@ -123,6 +123,315 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &18715634
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 18715635}
+  m_Layer: 5
+  m_Name: Buttons
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &18715635
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 18715634}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 197350995}
+  - {fileID: 1768370659}
+  - {fileID: 1594381512}
+  - {fileID: 1596456487}
+  - {fileID: 780360991}
+  - {fileID: 1783951064}
+  m_Father: {fileID: 1282429686}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.20056252, y: 0.3195185}
+  m_AnchorMax: {x: 0.78200006, y: 0.77400005}
+  m_AnchoredPosition: {x: -1.342041, y: 1.4903564}
+  m_SizeDelta: {x: -1.565918, y: 11.735992}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &154648162
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 154648163}
+  - component: {fileID: 154648165}
+  - component: {fileID: 154648164}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &154648163
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 154648162}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 780360991}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &154648164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 154648162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "Gracias por sus respuestas. Volver\xE9 en otro momento."
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 4cfd604d5eca248839d0989bf1bc6d80, type: 2}
+  m_sharedMaterial: {fileID: 1384446283936624288, guid: 4cfd604d5eca248839d0989bf1bc6d80, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 24
+  m_fontSizeBase: 24
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &154648165
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 154648162}
+  m_CullTransparentMesh: 1
+--- !u!1 &156317728
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 156317729}
+  - component: {fileID: 156317731}
+  - component: {fileID: 156317730}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &156317729
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 156317728}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1768370659}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &156317730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 156317728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "\xBFHa visto con anterioridad a alg\xFAn ni\xF1o desconocido por la zona?"
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 4cfd604d5eca248839d0989bf1bc6d80, type: 2}
+  m_sharedMaterial: {fileID: 1384446283936624288, guid: 4cfd604d5eca248839d0989bf1bc6d80, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 24
+  m_fontSizeBase: 24
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &156317731
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 156317728}
+  m_CullTransparentMesh: 1
 --- !u!114 &185631260
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -180,6 +489,139 @@ CapsuleCollider2D:
   m_Offset: {x: 0.33071375, y: -0.039685965}
   m_Size: {x: 1.4739275, y: 2.810588}
   m_Direction: 0
+--- !u!1 &197350994
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 197350995}
+  - component: {fileID: 197350998}
+  - component: {fileID: 197350997}
+  - component: {fileID: 197350996}
+  m_Layer: 5
+  m_Name: Button 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &197350995
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 197350994}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 939749659}
+  m_Father: {fileID: 18715635}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -289.91003, y: -14}
+  m_SizeDelta: {x: 534.98, y: 81.8203}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &197350996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 197350994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 1, g: 0, b: 0, a: 1}
+    m_PressedColor: {r: 0.8773585, g: 0.6808331, b: 0, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 197350997}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 442875825}
+        m_TargetAssemblyTypeName: DialogueKaida, Assembly-CSharp
+        m_MethodName: OnClickButton
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 197350996}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &197350997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 197350994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 52b60b9c1357f4734a6c2a09ecf4dcd4, type: 3}
+  m_Type: 2
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &197350998
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 197350994}
+  m_CullTransparentMesh: 1
 --- !u!1001 &274243310
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -237,7 +679,107 @@ PrefabInstance:
       value: Questioning
       objectReference: {fileID: 0}
     - target: {fileID: 8089515522627765743, guid: f69862802da0e4e8181dcba7b5e9786d, type: 3}
+      propertyPath: SoundEffects.Array.size
+      value: 29
+      objectReference: {fileID: 0}
+    - target: {fileID: 8089515522627765743, guid: f69862802da0e4e8181dcba7b5e9786d, type: 3}
+      propertyPath: SoundEffects.Array.data[17].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 66855343e05234cde95ac7e738baaf88, type: 3}
+    - target: {fileID: 8089515522627765743, guid: f69862802da0e4e8181dcba7b5e9786d, type: 3}
+      propertyPath: SoundEffects.Array.data[17].name
+      value: Voice-???
+      objectReference: {fileID: 0}
+    - target: {fileID: 8089515522627765743, guid: f69862802da0e4e8181dcba7b5e9786d, type: 3}
+      propertyPath: SoundEffects.Array.data[18].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 0b616797fe0d24ffe97064599838978e, type: 3}
+    - target: {fileID: 8089515522627765743, guid: f69862802da0e4e8181dcba7b5e9786d, type: 3}
+      propertyPath: SoundEffects.Array.data[18].name
+      value: Voice-Lauren
+      objectReference: {fileID: 0}
+    - target: {fileID: 8089515522627765743, guid: f69862802da0e4e8181dcba7b5e9786d, type: 3}
+      propertyPath: SoundEffects.Array.data[19].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: d12a686306999470783256310d5c8f79, type: 3}
+    - target: {fileID: 8089515522627765743, guid: f69862802da0e4e8181dcba7b5e9786d, type: 3}
+      propertyPath: SoundEffects.Array.data[19].name
+      value: Voice-Nemo
+      objectReference: {fileID: 0}
+    - target: {fileID: 8089515522627765743, guid: f69862802da0e4e8181dcba7b5e9786d, type: 3}
+      propertyPath: SoundEffects.Array.data[20].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 6e828b88daaf24dd58ee9848831ad657, type: 3}
+    - target: {fileID: 8089515522627765743, guid: f69862802da0e4e8181dcba7b5e9786d, type: 3}
+      propertyPath: SoundEffects.Array.data[20].name
+      value: Voice-Sevran
+      objectReference: {fileID: 0}
+    - target: {fileID: 8089515522627765743, guid: f69862802da0e4e8181dcba7b5e9786d, type: 3}
+      propertyPath: SoundEffects.Array.data[21].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 8d010ef21857344a4badffd1b78f219f, type: 3}
+    - target: {fileID: 8089515522627765743, guid: f69862802da0e4e8181dcba7b5e9786d, type: 3}
+      propertyPath: SoundEffects.Array.data[21].name
+      value: Voice-Simnes
+      objectReference: {fileID: 0}
+    - target: {fileID: 8089515522627765743, guid: f69862802da0e4e8181dcba7b5e9786d, type: 3}
+      propertyPath: SoundEffects.Array.data[22].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 7848a808aae294d28a589c229fe8c82f, type: 3}
+    - target: {fileID: 8089515522627765743, guid: f69862802da0e4e8181dcba7b5e9786d, type: 3}
+      propertyPath: SoundEffects.Array.data[22].name
+      value: Voice-Telephone
+      objectReference: {fileID: 0}
+    - target: {fileID: 8089515522627765743, guid: f69862802da0e4e8181dcba7b5e9786d, type: 3}
+      propertyPath: SoundEffects.Array.data[23].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 5a38524205cbc480884202801d6fb98d, type: 3}
+    - target: {fileID: 8089515522627765743, guid: f69862802da0e4e8181dcba7b5e9786d, type: 3}
+      propertyPath: SoundEffects.Array.data[23].name
+      value: Voice-TelmMoyal
+      objectReference: {fileID: 0}
+    - target: {fileID: 8089515522627765743, guid: f69862802da0e4e8181dcba7b5e9786d, type: 3}
+      propertyPath: SoundEffects.Array.data[24].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: ad096934c5cd6443e9818d57cb188baf, type: 3}
+    - target: {fileID: 8089515522627765743, guid: f69862802da0e4e8181dcba7b5e9786d, type: 3}
+      propertyPath: SoundEffects.Array.data[24].name
+      value: Voice-YvonnsMemia
+      objectReference: {fileID: 0}
+    - target: {fileID: 8089515522627765743, guid: f69862802da0e4e8181dcba7b5e9786d, type: 3}
+      propertyPath: SoundEffects.Array.data[25].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 0ab9a1f9cf9f54516b44f2635ce6db9a, type: 3}
+    - target: {fileID: 8089515522627765743, guid: f69862802da0e4e8181dcba7b5e9786d, type: 3}
+      propertyPath: SoundEffects.Array.data[25].name
+      value: Voice-NeutralText
+      objectReference: {fileID: 0}
+    - target: {fileID: 8089515522627765743, guid: f69862802da0e4e8181dcba7b5e9786d, type: 3}
+      propertyPath: SoundEffects.Array.data[26].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 7ebdcb8723eb74c1784e78fc9f236732, type: 3}
+    - target: {fileID: 8089515522627765743, guid: f69862802da0e4e8181dcba7b5e9786d, type: 3}
+      propertyPath: SoundEffects.Array.data[26].name
+      value: Voice-TypingMachine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8089515522627765743, guid: f69862802da0e4e8181dcba7b5e9786d, type: 3}
+      propertyPath: SoundEffects.Array.data[27].name
+      value: Voice-Vigilante 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8089515522627765743, guid: f69862802da0e4e8181dcba7b5e9786d, type: 3}
+      propertyPath: SoundEffects.Array.data[28].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 5a38524205cbc480884202801d6fb98d, type: 3}
+    - target: {fileID: 8089515522627765743, guid: f69862802da0e4e8181dcba7b5e9786d, type: 3}
+      propertyPath: SoundEffects.Array.data[28].name
+      value: Voice-Vigilante 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8089515522627765743, guid: f69862802da0e4e8181dcba7b5e9786d, type: 3}
       propertyPath: SoundEffects.Array.data[16].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8089515522627765743, guid: f69862802da0e4e8181dcba7b5e9786d, type: 3}
+      propertyPath: SoundEffects.Array.data[17].volume
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -245,11 +787,456 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f69862802da0e4e8181dcba7b5e9786d, type: 3}
+--- !u!1 &306747630
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 306747631}
+  - component: {fileID: 306747633}
+  - component: {fileID: 306747632}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &306747631
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 306747630}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1596456487}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &306747632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 306747630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "\xBFTiene alg\xFAn dato que crea que pueda ayudarme en mi investigaci\xF3n?"
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 4cfd604d5eca248839d0989bf1bc6d80, type: 2}
+  m_sharedMaterial: {fileID: 1384446283936624288, guid: 4cfd604d5eca248839d0989bf1bc6d80, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 24
+  m_fontSizeBase: 24
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &306747633
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 306747630}
+  m_CullTransparentMesh: 1
 --- !u!1 &441551763 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 548489310745255389, guid: c8cc8d84970934adf975b8e9548d1874, type: 3}
   m_PrefabInstance: {fileID: 526506226}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &442875824
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 442875827}
+  - component: {fileID: 442875826}
+  - component: {fileID: 442875825}
+  m_Layer: 0
+  m_Name: DialogueTrigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &442875825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 442875824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 478e3619f48844c828c2e459cd9a574a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firstEntrance: 1
+  optionMode: 0
+  dialogueUI: {fileID: 526506231}
+  characterPlaceholder: {fileID: 526506230}
+  characterName: {fileID: 526506228}
+  sentenceField: {fileID: 526506229}
+  nextArrow: {fileID: 526506227}
+  currentConversation: []
+  houseEntrance:
+  - characterName: ???
+    faceSprite: {fileID: 21300000, guid: 4171b92340ee94d0abbc851b320d02c4, type: 3}
+    currentSentence: "\xBFQui\xE9n es usted?"
+  - characterName: Nemo
+    faceSprite: {fileID: 21300000, guid: 65d3a420264124d3ba6dbc2df85ea5bd, type: 3}
+    currentSentence: "Buenas tardes. Soy el detective Nemo, de la polic\xEDa de Breonstl.
+      Vengo a investigar un caso de posible secuestro de un ni\xF1o en esta zona. "
+  - characterName: Nemo
+    faceSprite: {fileID: 21300000, guid: 65d3a420264124d3ba6dbc2df85ea5bd, type: 3}
+    currentSentence: "\xBFLe importar\xEDa responder a algunas preguntas?"
+  - characterName: ???
+    faceSprite: {fileID: 21300000, guid: 2b8358bf186b94b4abc22733649011fb, type: 3}
+    currentSentence: "Un polic\xEDa. Ya."
+  - characterName: Nemo
+    faceSprite: {fileID: 21300000, guid: 056a3dfb394a240038fff36e2a397905, type: 3}
+    currentSentence: ...
+  - characterName: Nemo
+    faceSprite: {fileID: 21300000, guid: 65d3a420264124d3ba6dbc2df85ea5bd, type: 3}
+    currentSentence: "Ser\xE9 breve."
+  - characterName: ???
+    faceSprite: {fileID: 21300000, guid: 6b6883f86c248424e85202edda090b29, type: 3}
+    currentSentence: "Pues s\xE9alo."
+  - characterName: Nemo
+    faceSprite: {fileID: 21300000, guid: 65d3a420264124d3ba6dbc2df85ea5bd, type: 3}
+    currentSentence: "\xBFMe podr\xEDa indicar su nombre, edad y profesi\xF3n?"
+  - characterName: Kaida
+    faceSprite: {fileID: 21300000, guid: 6b6883f86c248424e85202edda090b29, type: 3}
+    currentSentence: "Mi nombre es Kaida, tengo 32 a\xF1os y soy matrona y curandera
+      en este pueblo."
+  lookingAround:
+  - characterName: Kaida
+    faceSprite: {fileID: 21300000, guid: 6b6883f86c248424e85202edda090b29, type: 3}
+    currentSentence: "Que sea r\xE1pido. Tengo mucho que hacer. "
+  alibiCheck:
+  - characterName: Kaida
+    faceSprite: {fileID: 21300000, guid: 4171b92340ee94d0abbc851b320d02c4, type: 3}
+    currentSentence: ...
+  - characterName: Nemo
+    faceSprite: {fileID: 21300000, guid: 4ea6a4ec762104ae9813f9a2bbe015b8, type: 3}
+    currentSentence: (No me ha gustado esa mirada...)
+  - characterName: Kaida
+    faceSprite: {fileID: 21300000, guid: 2b8358bf186b94b4abc22733649011fb, type: 3}
+    currentSentence: "Entonces sospechan de m\xED incluso de entre toda esta gentuza..."
+  - characterName: Nemo
+    faceSprite: {fileID: 21300000, guid: 65d3a420264124d3ba6dbc2df85ea5bd, type: 3}
+    currentSentence: "No sospechamos de usted, se\xF1orita Kaida. "
+  - characterName: Nemo
+    faceSprite: {fileID: 21300000, guid: 65d3a420264124d3ba6dbc2df85ea5bd, type: 3}
+    currentSentence: "Tenemos informaci\xF3n de que el culpable est\xE1 en el pueblo
+      y el reglamento dicta que tenemos que interrogar a todos en busca de informaci\xF3n
+      m\xE1s concreta. "
+  - characterName: Nemo
+    faceSprite: {fileID: 21300000, guid: 65d3a420264124d3ba6dbc2df85ea5bd, type: 3}
+    currentSentence: "No se preocupe lo m\xE1s m\xEDnimo. Solo responda sinceramente
+      a mis preguntas. "
+  - characterName: Kaida
+    faceSprite: {fileID: 21300000, guid: c4cf188e723cc45e98c3f3214730c651, type: 3}
+    currentSentence: ...
+  - characterName: Kaida
+    faceSprite: {fileID: 21300000, guid: 6b6883f86c248424e85202edda090b29, type: 3}
+    currentSentence: "El d\xEDa 4 estuve aqu\xED, en Helvaasta, todo el d\xEDa. Por
+      la ma\xF1ana fui a comprar unas pastas al monasterio. "
+  - characterName: Kaida
+    faceSprite: {fileID: 21300000, guid: 6b6883f86c248424e85202edda090b29, type: 3}
+    currentSentence: "Por la tarde vino Jevanna, la de la posada. Le dol\xEDa la
+      cabeza. "
+  - characterName: Kaida
+    faceSprite: {fileID: 21300000, guid: 6b6883f86c248424e85202edda090b29, type: 3}
+    currentSentence: "Un rato m\xE1s tarde se acerc\xF3 Telm, el carpintero. Un corte.
+      Lo desinfect\xE9 y le di unas hierbas. "
+  - characterName: Kaida
+    faceSprite: {fileID: 21300000, guid: 2b8358bf186b94b4abc22733649011fb, type: 3}
+    currentSentence: "Le dije que fuera a la tienda a por alguna botella de alcohol
+      por si acaso. Aqu\xED no abunda el material m\xE9dico o curativo. "
+  - characterName: Kaida
+    faceSprite: {fileID: 21300000, guid: 2b8358bf186b94b4abc22733649011fb, type: 3}
+    currentSentence: "Tenemos que ingeni\xE1rnoslas como podemos. Todo va para la
+      ciudad."
+  throughWindow:
+  - characterName: Kaida
+    faceSprite: {fileID: 21300000, guid: 2b8358bf186b94b4abc22733649011fb, type: 3}
+    currentSentence: ...
+  - characterName: Kaida
+    faceSprite: {fileID: 21300000, guid: 6b6883f86c248424e85202edda090b29, type: 3}
+    currentSentence: 'Tanto como sospechoso, nada. '
+  - characterName: Kaida
+    faceSprite: {fileID: 21300000, guid: 6b6883f86c248424e85202edda090b29, type: 3}
+    currentSentence: "Fablec, el empleado nuevo de Lauren, de la granja, estaba cerca
+      del lago. Luego se meti\xF3 al bosque de cipreses que hay por all\xED.  "
+  - characterName: Kaida
+    faceSprite: {fileID: 21300000, guid: 6b6883f86c248424e85202edda090b29, type: 3}
+    currentSentence: "A lo mejor estaba atajando, vaya usted a saber. No vi nada
+      m\xE1s."
+  thisKindOfPeople:
+  - characterName: Kaida
+    faceSprite: {fileID: 21300000, guid: c4cf188e723cc45e98c3f3214730c651, type: 3}
+    currentSentence: ...
+  - characterName: Kaida
+    faceSprite: {fileID: 21300000, guid: c4cf188e723cc45e98c3f3214730c651, type: 3}
+    currentSentence: "Es una manera de hablar. Olv\xEDdelo."
+  atNight:
+  - characterName: Kaida
+    faceSprite: {fileID: 21300000, guid: 2b8358bf186b94b4abc22733649011fb, type: 3}
+    currentSentence: "Luego acost\xE9... me acost\xE9."
+  - characterName: Kaida
+    faceSprite: {fileID: 21300000, guid: c4cf188e723cc45e98c3f3214730c651, type: 3}
+    currentSentence: ...
+  - characterName: Kaida
+    faceSprite: {fileID: 21300000, guid: 4171b92340ee94d0abbc851b320d02c4, type: 3}
+    currentSentence: "No s\xE9 qu\xE9 m\xE1s quiere que le diga. \xBFHa acabado ya?"
+  unknownBoy:
+  - characterName: Kaida
+    faceSprite: {fileID: 21300000, guid: c4cf188e723cc45e98c3f3214730c651, type: 3}
+    currentSentence: ...
+  - characterName: Kaida
+    faceSprite: {fileID: 21300000, guid: 4171b92340ee94d0abbc851b320d02c4, type: 3}
+    currentSentence: No, para nada.
+  - characterName: Nemo
+    faceSprite: {fileID: 21300000, guid: 4ea6a4ec762104ae9813f9a2bbe015b8, type: 3}
+    currentSentence: "\xBFEst\xE1 segura?"
+  - characterName: Kaida
+    faceSprite: {fileID: 21300000, guid: 4171b92340ee94d0abbc851b320d02c4, type: 3}
+    currentSentence: "S\xED."
+  - characterName: Kaida
+    faceSprite: {fileID: 21300000, guid: 4171b92340ee94d0abbc851b320d02c4, type: 3}
+    currentSentence: "Aqu\xED no se ven ni\xF1os, detective. Deje de perder el tiempo."
+  - characterName: Kaida
+    faceSprite: {fileID: 21300000, guid: 4171b92340ee94d0abbc851b320d02c4, type: 3}
+    currentSentence: "Esto es un pueblo muerto. Aqu\xED no hay nada para un ni\xF1o."
+  before25th:
+  - characterName: Kaida
+    faceSprite: {fileID: 21300000, guid: 6b6883f86c248424e85202edda090b29, type: 3}
+    currentSentence: "Quiz\xE1 Nil, el de la granja. El anterior empleado de Lauren. "
+  - characterName: Kaida
+    faceSprite: {fileID: 21300000, guid: 6b6883f86c248424e85202edda090b29, type: 3}
+    currentSentence: "Ya hace un tiempo que no lo veo por aqu\xED."
+  aboutNil:
+  - characterName: Kaida
+    faceSprite: {fileID: 21300000, guid: 2b8358bf186b94b4abc22733649011fb, type: 3}
+    currentSentence: "No s\xE9 qu\xE9 puede tener que ver con el caso, pero yo se
+      lo digo. "
+  - characterName: Kaida
+    faceSprite: {fileID: 21300000, guid: 2b8358bf186b94b4abc22733649011fb, type: 3}
+    currentSentence: "No sab\xEDa gestionarse. Ven\xEDa con problemas de brazos. "
+  - characterName: Kaida
+    faceSprite: {fileID: 21300000, guid: 2b8358bf186b94b4abc22733649011fb, type: 3}
+    currentSentence: "Eso deber\xEDa pregunt\xE1rselo a Fablec, porque son compa\xF1eros. "
+  - characterName: Kaida
+    faceSprite: {fileID: 21300000, guid: 2b8358bf186b94b4abc22733649011fb, type: 3}
+    currentSentence: "Adem\xE1s, se pone nervioso con facilidad. No ser\xE1 complicado
+      sacarle informaci\xF3n."
+  whyIsNilGone:
+  - characterName: Kaida
+    faceSprite: {fileID: 21300000, guid: 6b6883f86c248424e85202edda090b29, type: 3}
+    currentSentence: "Me dijo en su momento que ten\xEDa pensado marcharse. Debe
+      de haberlo hecho. "
+  - characterName: Kaida
+    faceSprite: {fileID: 21300000, guid: 2b8358bf186b94b4abc22733649011fb, type: 3}
+    currentSentence: "Aunque yo no salgo mucho, as\xED que no lo s\xE9. Seguramente
+      sea por la vieja, que los explota a todos. "
+  - characterName: Nemo
+    faceSprite: {fileID: 21300000, guid: 65d3a420264124d3ba6dbc2df85ea5bd, type: 3}
+    currentSentence: "\xBFLa vieja?"
+  - characterName: Kaida
+    faceSprite: {fileID: 21300000, guid: 4171b92340ee94d0abbc851b320d02c4, type: 3}
+    currentSentence: 'Lauren, la de la granja. Una indeseable. '
+  - characterName: Kaida
+    faceSprite: {fileID: 21300000, guid: 4171b92340ee94d0abbc851b320d02c4, type: 3}
+    currentSentence: "\xBFY sabe qu\xE9? A ella nunca le duele nada. No la he visto
+      aqu\xED en mi casa desde que llegu\xE9 a Helvaasta. "
+  - characterName: Kaida
+    faceSprite: {fileID: 21300000, guid: 2b8358bf186b94b4abc22733649011fb, type: 3}
+    currentSentence: ' Mala hierba nunca muere.'
+  - characterName: Nemo
+    faceSprite: {fileID: 21300000, guid: 056a3dfb394a240038fff36e2a397905, type: 3}
+    currentSentence: ...
+  helpWithInvestigation:
+  - characterName: Kaida
+    faceSprite: {fileID: 21300000, guid: 6b6883f86c248424e85202edda090b29, type: 3}
+    currentSentence: "No creo, detective. Dudo que haya habido aqu\xED algun secuestro. "
+  - characterName: Kaida
+    faceSprite: {fileID: 21300000, guid: 6b6883f86c248424e85202edda090b29, type: 3}
+    currentSentence: "Solo s\xE9 que viven viejos y trabajadores. "
+  - characterName: Kaida
+    faceSprite: {fileID: 21300000, guid: 6b6883f86c248424e85202edda090b29, type: 3}
+    currentSentence: "Los \xFAnicos de fuera son los empleados de Lauren, pero no
+      parecen mala gente."
+  thankYou:
+  - characterName: Kaida
+    faceSprite: {fileID: 21300000, guid: 2b8358bf186b94b4abc22733649011fb, type: 3}
+    currentSentence: Haga lo que quiera.
+  after20min:
+  - characterName: Nemo
+    faceSprite: {fileID: 21300000, guid: 65d3a420264124d3ba6dbc2df85ea5bd, type: 3}
+    currentSentence: "(Ya he pasado mucho tiempo aqu\xED. Deber\xEDa irme.)"
+  - characterName: Nemo
+    faceSprite: {fileID: 21300000, guid: 5ccaadcddd534426bbd87bfc1b3bbfd6, type: 3}
+    currentSentence: "Gracias por su ayuda. Entiendo que no vive nadie m\xE1s aqu\xED
+      con usted, \xBFcierto?"
+  - characterName: Kaida
+    faceSprite: {fileID: 21300000, guid: c4cf188e723cc45e98c3f3214730c651, type: 3}
+    currentSentence: ...
+  - characterName: Kaida
+    faceSprite: {fileID: 21300000, guid: 2b8358bf186b94b4abc22733649011fb, type: 3}
+    currentSentence: Cierto.
+  - characterName: Nemo
+    faceSprite: {fileID: 21300000, guid: 65d3a420264124d3ba6dbc2df85ea5bd, type: 3}
+    currentSentence: "\xBFLe importa si vuelvo m\xE1s tarde?"
+  - characterName: Kaida
+    faceSprite: {fileID: 21300000, guid: 2b8358bf186b94b4abc22733649011fb, type: 3}
+    currentSentence: "Le diga lo que le diga, va a hacer lo que quiera igualmente.
+      Haga lo que vea m\xE1s oportuno."
+  - characterName: Nemo
+    faceSprite: {fileID: 21300000, guid: 65d3a420264124d3ba6dbc2df85ea5bd, type: 3}
+    currentSentence: "Gracias, se\xF1orita. Cuente de nuevo con mi presencia m\xE1s
+      adelante. "
+  button1: {fileID: 197350996}
+  button2: {fileID: 1768370660}
+  button3: {fileID: 1594381513}
+  button4: {fileID: 1596456488}
+  button5: {fileID: 780360992}
+  button6: {fileID: 1783951065}
+--- !u!70 &442875826
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 442875824}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 4.013438, y: 1.9887347}
+  m_Size: {x: 19.211885, y: 2.7476876}
+  m_Direction: 1
+--- !u!4 &442875827
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 442875824}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.665827, y: -1.4377804, z: 0.10332697}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &495456390
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -492,6 +1479,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DialogueUI
       objectReference: {fileID: 0}
+    - target: {fileID: 1420720790203036698, guid: c8cc8d84970934adf975b8e9548d1874, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2836865526097529885, guid: c8cc8d84970934adf975b8e9548d1874, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -572,9 +1563,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8278609037185970803, guid: c8cc8d84970934adf975b8e9548d1874, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 2836865526097529885, guid: c8cc8d84970934adf975b8e9548d1874, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 18715635}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8cc8d84970934adf975b8e9548d1874, type: 3}
 --- !u!1 &526506227 stripped
@@ -786,6 +1784,139 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1.431778}
   m_EdgeRadius: 0
+--- !u!1 &780360990
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 780360991}
+  - component: {fileID: 780360994}
+  - component: {fileID: 780360993}
+  - component: {fileID: 780360992}
+  m_Layer: 5
+  m_Name: Button 5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &780360991
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 780360990}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 154648163}
+  m_Father: {fileID: 18715635}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -288.97, y: 111}
+  m_SizeDelta: {x: 536.8483, y: 81.8203}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &780360992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 780360990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 1, g: 0, b: 0, a: 1}
+    m_PressedColor: {r: 0.8773585, g: 0.6808331, b: 0, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 780360993}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 442875825}
+        m_TargetAssemblyTypeName: DialogueKaida, Assembly-CSharp
+        m_MethodName: OnClickButton
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 780360992}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &780360993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 780360990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 52b60b9c1357f4734a6c2a09ecf4dcd4, type: 3}
+  m_Type: 2
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &780360994
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 780360990}
+  m_CullTransparentMesh: 1
 --- !u!1 &798477736
 GameObject:
   m_ObjectHideFlags: 0
@@ -1004,6 +2135,191 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &850474960
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 850474961}
+  - component: {fileID: 850474962}
+  m_Layer: 0
+  m_Name: Timeline
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &850474961
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 850474960}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.242679, y: -0.01369613, z: 0.053226653}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!320 &850474962
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 850474960}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: 16ea7ae060d0042448f6c577ea1ef7d6, type: 2}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: -2749150839826472974, guid: 16ea7ae060d0042448f6c577ea1ef7d6, type: 2}
+    value: {fileID: 1558561220}
+  m_ExposedReferences:
+    m_References: []
+--- !u!1 &939749658
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 939749659}
+  - component: {fileID: 939749661}
+  - component: {fileID: 939749660}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &939749659
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 939749658}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 197350995}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &939749660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 939749658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "\xBFD\xF3nde estuvo la tarde y la noche del d\xEDa 4 de abril?"
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 4cfd604d5eca248839d0989bf1bc6d80, type: 2}
+  m_sharedMaterial: {fileID: 1384446283936624288, guid: 4cfd604d5eca248839d0989bf1bc6d80, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 24
+  m_fontSizeBase: 24
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &939749661
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 939749658}
+  m_CullTransparentMesh: 1
 --- !u!114 &1007469930
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1065,6 +2381,140 @@ CapsuleCollider2D:
   m_Offset: {x: -0.14551401, y: -0.17197204}
   m_Size: {x: 2.618102, y: 3.718944}
   m_Direction: 0
+--- !u!1 &1141841671
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1141841672}
+  - component: {fileID: 1141841674}
+  - component: {fileID: 1141841673}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1141841672
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1141841671}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1783951064}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1141841673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1141841671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Button Text
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 4cfd604d5eca248839d0989bf1bc6d80, type: 2}
+  m_sharedMaterial: {fileID: 1384446283936624288, guid: 4cfd604d5eca248839d0989bf1bc6d80, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 24
+  m_fontSizeBase: 24
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1141841674
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1141841671}
+  m_CullTransparentMesh: 1
 --- !u!1 &1170987795
 GameObject:
   m_ObjectHideFlags: 0
@@ -1076,9 +2526,10 @@ GameObject:
   - component: {fileID: 1170987798}
   - component: {fileID: 1170987797}
   - component: {fileID: 1170987796}
-  - component: {fileID: 1170987799}
   - component: {fileID: 1170987801}
+  - component: {fileID: 1170987799}
   - component: {fileID: 1170987802}
+  - component: {fileID: 1170987800}
   m_Layer: 0
   m_Name: KaidaSprite_1
   m_TagString: Untagged
@@ -1203,10 +2654,10 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.96142966}
+  m_Offset: {x: 0.07180762, y: -1.0537536}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1217,9 +2668,61 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.3125, y: 1.0602149}
+  m_Size: {x: 2.1126409, y: 1.7372576}
   m_EdgeRadius: 0
---- !u!70 &1170987801
+--- !u!114 &1170987800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1170987795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 694a3d3fde1bf46d5b624c7820e936d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueUI: {fileID: 526506231}
+  characterPlaceholder: {fileID: 526506230}
+  characterName: {fileID: 526506228}
+  sentenceField: {fileID: 526506229}
+  nextArrow: {fileID: 526506227}
+  interactButton: {fileID: 0}
+  interactionText:
+  - characterName: Kaida
+    faceSprite: {fileID: 21300000, guid: c4cf188e723cc45e98c3f3214730c651, type: 3}
+    currentSentence: "Me est\xE1 incomodando, detective. \xBFPuede irse?"
+  - characterName: Nemo
+    faceSprite: {fileID: 21300000, guid: 65d3a420264124d3ba6dbc2df85ea5bd, type: 3}
+    currentSentence: 'Disculpe. Acabo pronto. '
+--- !u!50 &1170987801
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1170987795}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 7
+--- !u!70 &1170987802
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1248,231 +2751,12 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 4.013437, y: -0.4850909}
-  m_Size: {x: 19.211882, y: 3.7202713}
-  m_Direction: 1
---- !u!114 &1170987802
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1170987795}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 478e3619f48844c828c2e459cd9a574a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  firstEntrance: 0
-  dialogueUI: {fileID: 526506231}
-  characterPlaceholder: {fileID: 526506230}
-  characterName: {fileID: 526506228}
-  sentenceField: {fileID: 526506229}
-  nextArrow: {fileID: 526506227}
-  initialConversation:
-  - characterName: Kaida
-    faceSprite: {fileID: 21300000, guid: 4171b92340ee94d0abbc851b320d02c4, type: 3}
-    currentSentence: "\xBFQui\xE9n es usted?"
-  - characterName: Nemo
-    faceSprite: {fileID: 21300000, guid: 65d3a420264124d3ba6dbc2df85ea5bd, type: 3}
-    currentSentence: "Buenas tardes. Soy el detective Nemo, de la polic\xEDa de Breonstl.
-      Vengo a investigar el caso del secuestro del ni\xF1o en esta zona. \xBFLe importar\xEDa
-      responder a algunas preguntas?"
-  - characterName: Kaida
-    faceSprite: {fileID: 21300000, guid: 2b8358bf186b94b4abc22733649011fb, type: 3}
-    currentSentence: "Un polic\xEDa. Ya."
-  - characterName: Nemo
-    faceSprite: {fileID: 21300000, guid: 2730f97b11f054405abffa410d875d22, type: 3}
-    currentSentence: ...
-  - characterName: Nemo
-    faceSprite: {fileID: 21300000, guid: 056a3dfb394a240038fff36e2a397905, type: 3}
-    currentSentence: "Ser\xE9 breve."
-  - characterName: Kaida
-    faceSprite: {fileID: 21300000, guid: c4cf188e723cc45e98c3f3214730c651, type: 3}
-    currentSentence: "Pues s\xE9alo."
-  - characterName: Nemo
-    faceSprite: {fileID: 21300000, guid: 65d3a420264124d3ba6dbc2df85ea5bd, type: 3}
-    currentSentence: "Para empezar, \xBFme puede decir su nombre, edad y profesi\xF3n?"
-  - characterName: Kaida
-    faceSprite: {fileID: 21300000, guid: 2b8358bf186b94b4abc22733649011fb, type: 3}
-    currentSentence: "Mi nombre es Kaida, tengo 32 a\xF1os y soy matrona y curandera
-      en este pueblo."
-  - characterName: Nemo
-    faceSprite: {fileID: 21300000, guid: 7dd58a106d7b64704960272f3181bfc4, type: 3}
-    currentSentence: "Gracias, se\xF1orita Kaida. \xBFMe podr\xEDa decir d\xF3nde
-      estuvo la tarde y la noche del d\xEDa 4 de abril?"
-  - characterName: Kaida
-    faceSprite: {fileID: 21300000, guid: 4171b92340ee94d0abbc851b320d02c4, type: 3}
-    currentSentence: "\u2026"
-  - characterName: Nemo
-    faceSprite: {fileID: 21300000, guid: 4ea6a4ec762104ae9813f9a2bbe015b8, type: 3}
-    currentSentence: (No me ha gustado esa mirada.)
-  - characterName: Kaida
-    faceSprite: {fileID: 21300000, guid: c4cf188e723cc45e98c3f3214730c651, type: 3}
-    currentSentence: "Entonces sospechan de m\xED incluso de entre toda esta gentuza. "
-  - characterName: Nemo
-    faceSprite: {fileID: 21300000, guid: 4ea6a4ec762104ae9813f9a2bbe015b8, type: 3}
-    currentSentence: " \xBFGentuza?"
-  - characterName: Kaida
-    faceSprite: {fileID: 21300000, guid: 312ad8d978c2b4502994bbc91f9f3e41, type: 3}
-    currentSentence: "\u2026"
-  - characterName: Kaida
-    faceSprite: {fileID: 21300000, guid: c4cf188e723cc45e98c3f3214730c651, type: 3}
-    currentSentence: "Es una manera de hablar, olv\xEDdelo."
-  - characterName: Nemo
-    faceSprite: {fileID: 21300000, guid: 056a3dfb394a240038fff36e2a397905, type: 3}
-    currentSentence: ...
-  - characterName: Nemo
-    faceSprite: {fileID: 21300000, guid: 65d3a420264124d3ba6dbc2df85ea5bd, type: 3}
-    currentSentence: "No sospechamos de usted, se\xF1orita Kaida. Tenemos informaci\xF3n
-      de que el culpable est\xE1 en el pueblo."
-  - characterName: Nemo
-    faceSprite: {fileID: 21300000, guid: 65d3a420264124d3ba6dbc2df85ea5bd, type: 3}
-    currentSentence: "El reglamento dicta que tenemos que interrogar a todos en busca
-      de informaci\xF3n m\xE1s concreta."
-  - characterName: Nemo
-    faceSprite: {fileID: 21300000, guid: 7dd58a106d7b64704960272f3181bfc4, type: 3}
-    currentSentence: "No se preocupe lo m\xE1s m\xEDnimo. Solo responda sinceramente
-      a mis preguntas."
-  - characterName: Kaida
-    faceSprite: {fileID: 21300000, guid: 6b6883f86c248424e85202edda090b29, type: 3}
-    currentSentence: ...
-  - characterName: Kaida
-    faceSprite: {fileID: 21300000, guid: 6b6883f86c248424e85202edda090b29, type: 3}
-    currentSentence: "El d\xEDa 4 estuve aqu\xED, en Helvaasta, todo el d\xEDa. Por
-      la ma\xF1ana  fui a comprar unas pastas al monasterio. Por la tarde vino Jevanna,
-      la de la posada. Ten\xEDa dolor de cabeza. "
-  - characterName: Kaida
-    faceSprite: {fileID: 21300000, guid: 6b6883f86c248424e85202edda090b29, type: 3}
-    currentSentence: "Un rato m\xE1s tarde se acerc\xF3 Telm, el carpintero. Un corte.
-      Lo desinfectamos y le di unas hierbas. Le dije que fuera a la tienda a por
-      alguna botella de alcohol por si acaso. "
-  - characterName: Kaida
-    faceSprite: {fileID: 21300000, guid: 2b8358bf186b94b4abc22733649011fb, type: 3}
-    currentSentence: "Aqu\xED no abunda el material m\xE9dico o curativo. Tenemos
-      que ingeni\xE1rnoslas como podemos. Todo va para la ciudad."
-  - characterName: Nemo
-    faceSprite: {fileID: 21300000, guid: 65d3a420264124d3ba6dbc2df85ea5bd, type: 3}
-    currentSentence: "Entiendo. \xBFY vio algo sospechoso a trav\xE9s de las ventanas
-      de su casa?"
-  - characterName: Kaida
-    faceSprite: {fileID: 21300000, guid: 6b6883f86c248424e85202edda090b29, type: 3}
-    currentSentence: ...
-  - characterName: Kaida
-    faceSprite: {fileID: 21300000, guid: 6b6883f86c248424e85202edda090b29, type: 3}
-    currentSentence: Tanto como sospechoso nada.
-  - characterName: Kaida
-    faceSprite: {fileID: 21300000, guid: 2b8358bf186b94b4abc22733649011fb, type: 3}
-    currentSentence: "Fablec, el empleado nuevo de Lauren, de la granja, estaba cerca
-      del lago. Luego se meti\xF3 al bosque de cipreses que hay por all\xED. A lo
-      mejor estaba atajando a la granja. "
-  - characterName: Nemo
-    faceSprite: {fileID: 21300000, guid: 65d3a420264124d3ba6dbc2df85ea5bd, type: 3}
-    currentSentence: Muy bien.
-  - characterName: Nemo
-    faceSprite: {fileID: 21300000, guid: 65d3a420264124d3ba6dbc2df85ea5bd, type: 3}
-    currentSentence: "\xBFY hab\xEDa visto a un ni\xF1o desconocido por la zona con
-      anterioridad?"
-  - characterName: Kaida
-    faceSprite: {fileID: 21300000, guid: c4cf188e723cc45e98c3f3214730c651, type: 3}
-    currentSentence: ...
-  - characterName: Kaida
-    faceSprite: {fileID: 21300000, guid: 2b8358bf186b94b4abc22733649011fb, type: 3}
-    currentSentence: 'No, para nada. '
-  - characterName: Nemo
-    faceSprite: {fileID: 21300000, guid: 4ea6a4ec762104ae9813f9a2bbe015b8, type: 3}
-    currentSentence: ...
-  - characterName: Nemo
-    faceSprite: {fileID: 21300000, guid: 4ea6a4ec762104ae9813f9a2bbe015b8, type: 3}
-    currentSentence: "\xBFEst\xE1 segura?"
-  - characterName: Kaida
-    faceSprite: {fileID: 21300000, guid: 4171b92340ee94d0abbc851b320d02c4, type: 3}
-    currentSentence: "S\xED. Aqu\xED no se ven ni\xF1os, detective."
-  - characterName: Kaida
-    faceSprite: {fileID: 21300000, guid: c4cf188e723cc45e98c3f3214730c651, type: 3}
-    currentSentence: "Es un pueblo muerto. Aqu\xED no hay nada para un ni\xF1o."
-  - characterName: Nemo
-    faceSprite: {fileID: 21300000, guid: 4ea6a4ec762104ae9813f9a2bbe015b8, type: 3}
-    currentSentence: "Eso pensamos nosotros. \xBFY se le viene a la mente alguna
-      persona que viviese aqu\xED antes del 25 de abril y se fuese?"
-  - characterName: Kaida
-    faceSprite: {fileID: 21300000, guid: 312ad8d978c2b4502994bbc91f9f3e41, type: 3}
-    currentSentence: ...
-  - characterName: Kaida
-    faceSprite: {fileID: 21300000, guid: c4cf188e723cc45e98c3f3214730c651, type: 3}
-    currentSentence: "Quiz\xE1 Nil, el de la granja. El anterior empleado de Lauren. "
-  - characterName: Kaida
-    faceSprite: {fileID: 21300000, guid: c4cf188e723cc45e98c3f3214730c651, type: 3}
-    currentSentence: "No sab\xEDa gestionarse. Ven\xEDa con problemas de espalda,
-      de brazos\u2026"
-  - characterName: Kaida
-    faceSprite: {fileID: 21300000, guid: c4cf188e723cc45e98c3f3214730c651, type: 3}
-    currentSentence: "Me dijo que ten\xEDa pensado irse y hace algunos d\xEDas que
-      no lo veo. Yo tampoco salgo mucho, \xBFsabe? Pero \xE9l no sigue en el pueblo."
-  - characterName: Kaida
-    faceSprite: {fileID: 21300000, guid: c4cf188e723cc45e98c3f3214730c651, type: 3}
-    currentSentence: "Fablec ha venido alguna vez. No me ha hablado de Nil m\xE1s
-      que al principio, cuando lleg\xF3. Cuando estaban los dos trabajando."
-  - characterName: Kaida
-    faceSprite: {fileID: 21300000, guid: 2b8358bf186b94b4abc22733649011fb, type: 3}
-    currentSentence: "Quiz\xE1 \xE9l sepa algo. Se pone nervioso con facilidad. "
-  - characterName: Kaida
-    faceSprite: {fileID: 21300000, guid: 4171b92340ee94d0abbc851b320d02c4, type: 3}
-    currentSentence: 'Aunque puede ser por la vieja, que los explota a todos. '
-  - characterName: Nemo
-    faceSprite: {fileID: 21300000, guid: 056a3dfb394a240038fff36e2a397905, type: 3}
-    currentSentence: "\xBFLa vieja?"
-  - characterName: Kaida
-    faceSprite: {fileID: 21300000, guid: 4171b92340ee94d0abbc851b320d02c4, type: 3}
-    currentSentence: "Lauren. La de la granja. Una indeseable. \xBFY sabe qu\xE9?
-      A ella nunca le duele nada. No la he visto por aqu\xED desde que llegu\xE9
-      a Helvaasta."
-  - characterName: Kaida
-    faceSprite: {fileID: 21300000, guid: 4171b92340ee94d0abbc851b320d02c4, type: 3}
-    currentSentence: Mala hierba nunca muere.
-  - characterName: Nemo
-    faceSprite: {fileID: 21300000, guid: 056a3dfb394a240038fff36e2a397905, type: 3}
-    currentSentence: ...
-  - characterName: Nemo
-    faceSprite: {fileID: 21300000, guid: 65d3a420264124d3ba6dbc2df85ea5bd, type: 3}
-    currentSentence: "\xBFTiene alg\xFAn otro dato que pueda ayudarme en mi investigaci\xF3n,
-      se\xF1orita Kaida?"
-  - characterName: Kaida
-    faceSprite: {fileID: 21300000, guid: c4cf188e723cc45e98c3f3214730c651, type: 3}
-    currentSentence: "No creo, detective. No creo que haya habido ning\xFAn secuestro
-      aqu\xED, que solo viven viejos y trabajadores. Los \xFAnicos de fuera son los
-      empleados de Lauren, pero no parecen mala gente."
-  - characterName: Nemo
-    faceSprite: {fileID: 21300000, guid: 7dd58a106d7b64704960272f3181bfc4, type: 3}
-    currentSentence: "Gracias por su ayuda. Entiendo que no vive nadie m\xE1s aqu\xED
-      con usted, \xBFcierto?"
-  - characterName: Kaida
-    faceSprite: {fileID: 21300000, guid: c4cf188e723cc45e98c3f3214730c651, type: 3}
-    currentSentence: ...
-  - characterName: Kaida
-    faceSprite: {fileID: 21300000, guid: c4cf188e723cc45e98c3f3214730c651, type: 3}
-    currentSentence: Cierto.
-  - characterName: Nemo
-    faceSprite: {fileID: 21300000, guid: 7dd58a106d7b64704960272f3181bfc4, type: 3}
-    currentSentence: "\xBFLe importa si vuelvo m\xE1s tarde a volver a hablar con
-      usted?"
-  - characterName: Kaida
-    faceSprite: {fileID: 21300000, guid: 4171b92340ee94d0abbc851b320d02c4, type: 3}
-    currentSentence: "Le diga lo que le diga va a hacer lo que quiera igualmente.
-      Haga lo que vea m\xE1s oportuno. "
-  - characterName: Nemo
-    faceSprite: {fileID: 21300000, guid: 056a3dfb394a240038fff36e2a397905, type: 3}
-    currentSentence: ...
-  - characterName: Nemo
-    faceSprite: {fileID: 21300000, guid: 7dd58a106d7b64704960272f3181bfc4, type: 3}
-    currentSentence: "Gracias, se\xF1orita. \xBFLe importa si echo un vistazo por
-      aqu\xED?"
-  - characterName: Kaida
-    faceSprite: {fileID: 21300000, guid: 2b8358bf186b94b4abc22733649011fb, type: 3}
-    currentSentence: "Que sea r\xE1pido."
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 1.3125, y: 2.75}
+  m_Direction: 0
 --- !u!1 &1255272849
 GameObject:
   m_ObjectHideFlags: 0
@@ -1506,6 +2790,11 @@ Transform:
   - {fileID: 798477737}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!224 &1282429686 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 2836865526097529885, guid: c8cc8d84970934adf975b8e9548d1874, type: 3}
+  m_PrefabInstance: {fileID: 526506226}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1342403380
 GameObject:
   m_ObjectHideFlags: 0
@@ -2027,6 +3316,538 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.25, y: 13.57686}
   m_EdgeRadius: 0
+--- !u!1 &1594381511
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1594381512}
+  - component: {fileID: 1594381515}
+  - component: {fileID: 1594381514}
+  - component: {fileID: 1594381513}
+  m_Layer: 5
+  m_Name: Button 3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1594381512
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1594381511}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1809288975}
+  m_Father: {fileID: 18715635}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 288.98, y: -143}
+  m_SizeDelta: {x: 536.8483, y: 81.8203}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1594381513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1594381511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 1, g: 0, b: 0, a: 1}
+    m_PressedColor: {r: 0.8773585, g: 0.6808331, b: 0, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1594381514}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 442875825}
+        m_TargetAssemblyTypeName: DialogueKaida, Assembly-CSharp
+        m_MethodName: OnClickButton
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1594381513}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1594381514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1594381511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 52b60b9c1357f4734a6c2a09ecf4dcd4, type: 3}
+  m_Type: 2
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1594381515
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1594381511}
+  m_CullTransparentMesh: 1
+--- !u!1 &1596456486
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1596456487}
+  - component: {fileID: 1596456490}
+  - component: {fileID: 1596456489}
+  - component: {fileID: 1596456488}
+  m_Layer: 5
+  m_Name: Button 4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1596456487
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1596456486}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 306747631}
+  m_Father: {fileID: 18715635}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -288.97, y: -143}
+  m_SizeDelta: {x: 536.8483, y: 81.8203}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1596456488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1596456486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 1, g: 0, b: 0, a: 1}
+    m_PressedColor: {r: 0.8773585, g: 0.6808331, b: 0, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1596456489}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 442875825}
+        m_TargetAssemblyTypeName: DialogueKaida, Assembly-CSharp
+        m_MethodName: OnClickButton
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1596456488}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1596456489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1596456486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 52b60b9c1357f4734a6c2a09ecf4dcd4, type: 3}
+  m_Type: 2
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1596456490
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1596456486}
+  m_CullTransparentMesh: 1
+--- !u!1 &1768370658
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1768370659}
+  - component: {fileID: 1768370662}
+  - component: {fileID: 1768370661}
+  - component: {fileID: 1768370660}
+  m_Layer: 5
+  m_Name: Button 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1768370659
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1768370658}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 156317729}
+  m_Father: {fileID: 18715635}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 288.9759, y: -14}
+  m_SizeDelta: {x: 536.8483, y: 81.8203}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1768370660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1768370658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 1, g: 0, b: 0, a: 1}
+    m_PressedColor: {r: 0.8773585, g: 0.6808331, b: 0, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1768370661}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 442875825}
+        m_TargetAssemblyTypeName: DialogueKaida, Assembly-CSharp
+        m_MethodName: OnClickButton
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1768370660}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1768370661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1768370658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 52b60b9c1357f4734a6c2a09ecf4dcd4, type: 3}
+  m_Type: 2
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1768370662
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1768370658}
+  m_CullTransparentMesh: 1
+--- !u!1 &1783951063
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1783951064}
+  - component: {fileID: 1783951067}
+  - component: {fileID: 1783951066}
+  - component: {fileID: 1783951065}
+  m_Layer: 5
+  m_Name: Button 6
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1783951064
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1783951063}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1141841672}
+  m_Father: {fileID: 18715635}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 288.97, y: 111}
+  m_SizeDelta: {x: 536.8483, y: 81.8203}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1783951065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1783951063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 1, g: 0, b: 0, a: 1}
+    m_PressedColor: {r: 0.8773585, g: 0.6808331, b: 0, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1783951066}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 442875825}
+        m_TargetAssemblyTypeName: DialogueKaida, Assembly-CSharp
+        m_MethodName: OnClickButton
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1783951065}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1783951066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1783951063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 52b60b9c1357f4734a6c2a09ecf4dcd4, type: 3}
+  m_Type: 2
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1783951067
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1783951063}
+  m_CullTransparentMesh: 1
 --- !u!68 &1784318212
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -2074,6 +3895,141 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
+--- !u!1 &1809288974
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1809288975}
+  - component: {fileID: 1809288977}
+  - component: {fileID: 1809288976}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1809288975
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1809288974}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1594381512}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1809288976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1809288974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "\xBFSe le viene a la cabeza alguien que viviese aqu\xED antes del d\xEDa
+    25 y se haya ido?"
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 4cfd604d5eca248839d0989bf1bc6d80, type: 2}
+  m_sharedMaterial: {fileID: 1384446283936624288, guid: 4cfd604d5eca248839d0989bf1bc6d80, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 24
+  m_fontSizeBase: 24
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1809288977
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1809288974}
+  m_CullTransparentMesh: 1
 --- !u!68 &2055329604
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -2953,6 +4909,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: ChangeScene
       objectReference: {fileID: 0}
+    - target: {fileID: 4030466068277364607, guid: 81318ded4ea6b4d94b78ffbde8b74a7b, type: 3}
+      propertyPath: m_Size.y
+      value: 0.6538944
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030466068277364607, guid: 81318ded4ea6b4d94b78ffbde8b74a7b, type: 3}
+      propertyPath: m_Offset.y
+      value: -1.0349722
+      objectReference: {fileID: 0}
     - target: {fileID: 7945847180541069425, guid: 81318ded4ea6b4d94b78ffbde8b74a7b, type: 3}
       propertyPath: sceneBuildIndex
       value: 5
@@ -2976,3 +4940,5 @@ SceneRoots:
   - {fileID: 1170987798}
   - {fileID: 1347586797}
   - {fileID: 526506226}
+  - {fileID: 850474961}
+  - {fileID: 442875827}
