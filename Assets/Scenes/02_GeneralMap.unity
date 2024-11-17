@@ -499,36 +499,6 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
---- !u!114 &61241603
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 61241597}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 694a3d3fde1bf46d5b624c7820e936d4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogueUI: {fileID: 1401427418}
-  characterPlaceholder: {fileID: 1344209367}
-  characterName: {fileID: 769993888}
-  sentenceField: {fileID: 1312241146}
-  nextArrow: {fileID: 826633206}
-  interactButton: {fileID: 1976656729}
-  interactionText:
-  - characterName: Nemo
-    faceSprite: {fileID: 21300000, guid: 056a3dfb394a240038fff36e2a397905, type: 3}
-    currentSentence: "(Esto no es una casa peque\xF1a ni tiene el tejado rojo\u2026)"
-  - characterName: Nemo
-    faceSprite: {fileID: 21300000, guid: 4ea6a4ec762104ae9813f9a2bbe015b8, type: 3}
-    currentSentence: "(No puede ser la casa de la curandera. Adem\xE1s, se ve desde
-      aqu\xED que hay un camino que dirige a la granja que queda a la izquierda.)"
-  - characterName: Nemo
-    faceSprite: {fileID: 21300000, guid: 65d3a420264124d3ba6dbc2df85ea5bd, type: 3}
-    currentSentence: "(Podr\xEDa mirar el cartel que queda atr\xE1s en el camino,
-      pero supongo que dir\xE1 que es la granja.)"
 --- !u!61 &61241604
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -574,6 +544,44 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.4501514, y: 2.2761612}
   m_EdgeRadius: 0
+--- !u!114 &61241607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 61241597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8931dc4ee9eef48c2bd10a061bfcba0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  telephoneGameObject: {fileID: 2102043785}
+  dialogueUI: {fileID: 1401427418}
+  characterPlaceholder: {fileID: 1344209367}
+  characterName: {fileID: 769993888}
+  sentenceField: {fileID: 1312241146}
+  nextArrow: {fileID: 826633206}
+  interactButton: {fileID: 1976656729}
+  beforeTelephoneText:
+  - characterName: Nemo
+    faceSprite: {fileID: 21300000, guid: 65d3a420264124d3ba6dbc2df85ea5bd, type: 3}
+    currentSentence: "(Deber\xEDa informar al inspector de que he llegado a Helvaasta.)"
+  - characterName: Nemo
+    faceSprite: {fileID: 21300000, guid: 65d3a420264124d3ba6dbc2df85ea5bd, type: 3}
+    currentSentence: "(El tel\xE9fono deber\xEDa estar en la plaza, cerca de la entrada
+      del pueblo.)"
+  cantEnter:
+  - characterName: Nemo
+    faceSprite: {fileID: 21300000, guid: 056a3dfb394a240038fff36e2a397905, type: 3}
+    currentSentence: ...
+  - characterName: Nemo
+    faceSprite: {fileID: 21300000, guid: 056a3dfb394a240038fff36e2a397905, type: 3}
+    currentSentence: "(La puerta est\xE1 cerrada. Deber\xEDa volver en otro momento.)"
+  - characterName: Nemo
+    faceSprite: {fileID: 21300000, guid: 056a3dfb394a240038fff36e2a397905, type: 3}
+    currentSentence: "(Todav\xEDa me quedan algunas puertas a las que llamar.)"
+  interactionText: []
 --- !u!1 &80144486 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4524413463695813048, guid: 955c89f88c1ce456c9e1d9ff01f78952, type: 3}
@@ -624,31 +632,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 5.875, y: 6.3064175}
   m_EdgeRadius: 0
---- !u!114 &80144492
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 80144486}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 694a3d3fde1bf46d5b624c7820e936d4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogueUI: {fileID: 1401427418}
-  characterPlaceholder: {fileID: 1344209367}
-  characterName: {fileID: 769993888}
-  sentenceField: {fileID: 1312241146}
-  nextArrow: {fileID: 826633206}
-  interactButton: {fileID: 1976656729}
-  interactionText:
-  - characterName: Nemo
-    faceSprite: {fileID: 21300000, guid: 056a3dfb394a240038fff36e2a397905, type: 3}
-    currentSentence: (Esta casa no tiene el tejado rojo.)
-  - characterName: Nemo
-    faceSprite: {fileID: 21300000, guid: 056a3dfb394a240038fff36e2a397905, type: 3}
-    currentSentence: "(Quiz\xE1 deber\xEDa mirar el cartel de aqu\xED al lado.)"
 --- !u!70 &80144493
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -684,6 +667,44 @@ CapsuleCollider2D:
   m_Offset: {x: -1.416708, y: -3.8384647}
   m_Size: {x: 2.2992897, y: 3.563343}
   m_Direction: 0
+--- !u!114 &80144496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 80144486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8931dc4ee9eef48c2bd10a061bfcba0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  telephoneGameObject: {fileID: 2102043785}
+  dialogueUI: {fileID: 1401427418}
+  characterPlaceholder: {fileID: 1344209367}
+  characterName: {fileID: 769993888}
+  sentenceField: {fileID: 1312241146}
+  nextArrow: {fileID: 826633206}
+  interactButton: {fileID: 1976656729}
+  beforeTelephoneText:
+  - characterName: Nemo
+    faceSprite: {fileID: 21300000, guid: 65d3a420264124d3ba6dbc2df85ea5bd, type: 3}
+    currentSentence: "(Deber\xEDa informar al inspector de que he llegado a Helvaasta.)"
+  - characterName: Nemo
+    faceSprite: {fileID: 21300000, guid: 65d3a420264124d3ba6dbc2df85ea5bd, type: 3}
+    currentSentence: "(El tel\xE9fono deber\xEDa estar en la plaza, cerca de la entrada
+      del pueblo.)"
+  cantEnter:
+  - characterName: Nemo
+    faceSprite: {fileID: 21300000, guid: 056a3dfb394a240038fff36e2a397905, type: 3}
+    currentSentence: ...
+  - characterName: Nemo
+    faceSprite: {fileID: 21300000, guid: 056a3dfb394a240038fff36e2a397905, type: 3}
+    currentSentence: "(La puerta est\xE1 cerrada. Deber\xEDa volver en otro momento.)"
+  - characterName: Nemo
+    faceSprite: {fileID: 21300000, guid: 056a3dfb394a240038fff36e2a397905, type: 3}
+    currentSentence: "(Todav\xEDa me quedan algunas puertas a las que llamar.)"
+  interactionText: []
 --- !u!1 &127634803 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -1115841053600293319, guid: 955c89f88c1ce456c9e1d9ff01f78952, type: 3}
@@ -2028,31 +2049,6 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
---- !u!114 &651959532
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 651959526}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 694a3d3fde1bf46d5b624c7820e936d4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogueUI: {fileID: 1401427418}
-  characterPlaceholder: {fileID: 1344209367}
-  characterName: {fileID: 769993888}
-  sentenceField: {fileID: 1312241146}
-  nextArrow: {fileID: 826633206}
-  interactButton: {fileID: 1976656729}
-  interactionText:
-  - characterName: Nemo
-    faceSprite: {fileID: 21300000, guid: 65d3a420264124d3ba6dbc2df85ea5bd, type: 3}
-    currentSentence: ' (Esta casa no tiene el tejado rojo y es bastante grande.)'
-  - characterName: Nemo
-    faceSprite: {fileID: 21300000, guid: 65d3a420264124d3ba6dbc2df85ea5bd, type: 3}
-    currentSentence: "(Quiz\xE1 deber\xEDa mirar el cartel aqu\xED al lado.)"
 --- !u!61 &651959533
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2098,6 +2094,44 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.0727406, y: 3.7378197}
   m_EdgeRadius: 0
+--- !u!114 &651959536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 651959526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8931dc4ee9eef48c2bd10a061bfcba0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  telephoneGameObject: {fileID: 2102043785}
+  dialogueUI: {fileID: 1401427418}
+  characterPlaceholder: {fileID: 1344209367}
+  characterName: {fileID: 769993888}
+  sentenceField: {fileID: 1312241146}
+  nextArrow: {fileID: 826633206}
+  interactButton: {fileID: 1976656729}
+  beforeTelephoneText:
+  - characterName: Nemo
+    faceSprite: {fileID: 21300000, guid: 65d3a420264124d3ba6dbc2df85ea5bd, type: 3}
+    currentSentence: "(Deber\xEDa informar al inspector de que he llegado a Helvaasta.)"
+  - characterName: Nemo
+    faceSprite: {fileID: 21300000, guid: 65d3a420264124d3ba6dbc2df85ea5bd, type: 3}
+    currentSentence: "(El tel\xE9fono deber\xEDa estar en la plaza, cerca de la entrada
+      del pueblo.)"
+  cantEnter:
+  - characterName: Nemo
+    faceSprite: {fileID: 21300000, guid: 056a3dfb394a240038fff36e2a397905, type: 3}
+    currentSentence: ...
+  - characterName: Nemo
+    faceSprite: {fileID: 21300000, guid: 056a3dfb394a240038fff36e2a397905, type: 3}
+    currentSentence: "(La puerta est\xE1 cerrada. Deber\xEDa volver en otro momento.)"
+  - characterName: Nemo
+    faceSprite: {fileID: 21300000, guid: 056a3dfb394a240038fff36e2a397905, type: 3}
+    currentSentence: "(Todav\xEDa me quedan algunas puertas a las que llamar.)"
+  interactionText: []
 --- !u!1 &707114833 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3005232080229534921, guid: 955c89f88c1ce456c9e1d9ff01f78952, type: 3}
@@ -2148,32 +2182,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 5.875, y: 6.372371}
   m_EdgeRadius: 0
---- !u!114 &707114839
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 707114833}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 694a3d3fde1bf46d5b624c7820e936d4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogueUI: {fileID: 1401427418}
-  characterPlaceholder: {fileID: 1344209367}
-  characterName: {fileID: 769993888}
-  sentenceField: {fileID: 1312241146}
-  nextArrow: {fileID: 826633206}
-  interactButton: {fileID: 1976656729}
-  interactionText:
-  - characterName: Nemo
-    faceSprite: {fileID: 21300000, guid: 65d3a420264124d3ba6dbc2df85ea5bd, type: 3}
-    currentSentence: "(Deber\xEDa informar al inspector de que he llegado a Helvaasta.)"
-  - characterName: Nemo
-    faceSprite: {fileID: 21300000, guid: 65d3a420264124d3ba6dbc2df85ea5bd, type: 3}
-    currentSentence: "(El tel\xE9fono est\xE1 en la plaza, cerca de la entrada del
-      pueblo.)"
 --- !u!70 &707114840
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -2209,6 +2217,44 @@ CapsuleCollider2D:
   m_Offset: {x: -0.9531784, y: -3.3522787}
   m_Size: {x: 2.91156, y: 3.666956}
   m_Direction: 0
+--- !u!114 &707114843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 707114833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8931dc4ee9eef48c2bd10a061bfcba0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  telephoneGameObject: {fileID: 2102043785}
+  dialogueUI: {fileID: 1401427418}
+  characterPlaceholder: {fileID: 1344209367}
+  characterName: {fileID: 769993888}
+  sentenceField: {fileID: 1312241146}
+  nextArrow: {fileID: 826633206}
+  interactButton: {fileID: 1976656729}
+  beforeTelephoneText:
+  - characterName: Nemo
+    faceSprite: {fileID: 21300000, guid: 65d3a420264124d3ba6dbc2df85ea5bd, type: 3}
+    currentSentence: "(Deber\xEDa informar al inspector de que he llegado a Helvaasta.)"
+  - characterName: Nemo
+    faceSprite: {fileID: 21300000, guid: 65d3a420264124d3ba6dbc2df85ea5bd, type: 3}
+    currentSentence: "(El tel\xE9fono deber\xEDa estar en la plaza, cerca de la entrada
+      del pueblo.)"
+  cantEnter:
+  - characterName: Nemo
+    faceSprite: {fileID: 21300000, guid: 056a3dfb394a240038fff36e2a397905, type: 3}
+    currentSentence: ...
+  - characterName: Nemo
+    faceSprite: {fileID: 21300000, guid: 056a3dfb394a240038fff36e2a397905, type: 3}
+    currentSentence: "(La puerta est\xE1 cerrada. Deber\xEDa volver en otro momento.)"
+  - characterName: Nemo
+    faceSprite: {fileID: 21300000, guid: 056a3dfb394a240038fff36e2a397905, type: 3}
+    currentSentence: "(Todav\xEDa me quedan algunas puertas a las que llamar.)"
+  interactionText: []
 --- !u!1 &764481179 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8360076035486653463, guid: 955c89f88c1ce456c9e1d9ff01f78952, type: 3}
@@ -2602,33 +2648,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 5.875, y: 8.357208}
   m_EdgeRadius: 0
---- !u!114 &793485873
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 793485867}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 694a3d3fde1bf46d5b624c7820e936d4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogueUI: {fileID: 1401427418}
-  characterPlaceholder: {fileID: 1344209367}
-  characterName: {fileID: 769993888}
-  sentenceField: {fileID: 1312241146}
-  nextArrow: {fileID: 826633206}
-  interactButton: {fileID: 1976656729}
-  interactionText:
-  - characterName: Nemo
-    faceSprite: {fileID: 21300000, guid: 056a3dfb394a240038fff36e2a397905, type: 3}
-    currentSentence: "(Parece que me he alejado un poco del centro del pueblo. Pero
-      est\xE1 al norte, \xBFno?)"
-  - characterName: Nemo
-    faceSprite: {fileID: 21300000, guid: 65d3a420264124d3ba6dbc2df85ea5bd, type: 3}
-    currentSentence: "(Aunque\u2026 aqu\xED hay algunas herramientas de trabajo.
-      Esto parece parte de la granja. Quiz\xE1 deber\xEDa seguir buscando.)"
 --- !u!70 &793485874
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -2664,6 +2683,44 @@ CapsuleCollider2D:
   m_Offset: {x: -1.093049, y: -3.9584808}
   m_Size: {x: 2.8584366, y: 3.6611176}
   m_Direction: 0
+--- !u!114 &793485877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793485867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8931dc4ee9eef48c2bd10a061bfcba0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  telephoneGameObject: {fileID: 2102043785}
+  dialogueUI: {fileID: 1401427418}
+  characterPlaceholder: {fileID: 1344209367}
+  characterName: {fileID: 769993888}
+  sentenceField: {fileID: 1312241146}
+  nextArrow: {fileID: 826633206}
+  interactButton: {fileID: 1976656729}
+  beforeTelephoneText:
+  - characterName: Nemo
+    faceSprite: {fileID: 21300000, guid: 65d3a420264124d3ba6dbc2df85ea5bd, type: 3}
+    currentSentence: "(Deber\xEDa informar al inspector de que he llegado a Helvaasta.)"
+  - characterName: Nemo
+    faceSprite: {fileID: 21300000, guid: 65d3a420264124d3ba6dbc2df85ea5bd, type: 3}
+    currentSentence: "(El tel\xE9fono deber\xEDa estar en la plaza, cerca de la entrada
+      del pueblo.)"
+  cantEnter:
+  - characterName: Nemo
+    faceSprite: {fileID: 21300000, guid: 056a3dfb394a240038fff36e2a397905, type: 3}
+    currentSentence: ...
+  - characterName: Nemo
+    faceSprite: {fileID: 21300000, guid: 056a3dfb394a240038fff36e2a397905, type: 3}
+    currentSentence: "(La puerta est\xE1 cerrada. Deber\xEDa volver en otro momento.)"
+  - characterName: Nemo
+    faceSprite: {fileID: 21300000, guid: 056a3dfb394a240038fff36e2a397905, type: 3}
+    currentSentence: "(Todav\xEDa me quedan algunas puertas a las que llamar.)"
+  interactionText: []
 --- !u!1 &798477736
 GameObject:
   m_ObjectHideFlags: 0
@@ -2873,32 +2930,6 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
---- !u!114 &854753622
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 854753614}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 694a3d3fde1bf46d5b624c7820e936d4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogueUI: {fileID: 1401427418}
-  characterPlaceholder: {fileID: 1344209367}
-  characterName: {fileID: 769993888}
-  sentenceField: {fileID: 1312241146}
-  nextArrow: {fileID: 826633206}
-  interactButton: {fileID: 1976656729}
-  interactionText:
-  - characterName: Nemo
-    faceSprite: {fileID: 21300000, guid: 65d3a420264124d3ba6dbc2df85ea5bd, type: 3}
-    currentSentence: "(Deber\xEDa informar al inspector de que he llegado a Helvaasta.)"
-  - characterName: Nemo
-    faceSprite: {fileID: 21300000, guid: 65d3a420264124d3ba6dbc2df85ea5bd, type: 3}
-    currentSentence: "(El tel\xE9fono est\xE1 en la plaza, cerca de la entrada del
-      pueblo.)"
 --- !u!61 &854753623
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2944,6 +2975,44 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.1511078, y: 2.7576675}
   m_EdgeRadius: 0
+--- !u!114 &854753626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 854753614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8931dc4ee9eef48c2bd10a061bfcba0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  telephoneGameObject: {fileID: 2102043785}
+  dialogueUI: {fileID: 1401427418}
+  characterPlaceholder: {fileID: 1344209367}
+  characterName: {fileID: 769993888}
+  sentenceField: {fileID: 1312241146}
+  nextArrow: {fileID: 826633206}
+  interactButton: {fileID: 1976656729}
+  beforeTelephoneText:
+  - characterName: Nemo
+    faceSprite: {fileID: 21300000, guid: 65d3a420264124d3ba6dbc2df85ea5bd, type: 3}
+    currentSentence: "(Deber\xEDa informar al inspector de que he llegado a Helvaasta.)"
+  - characterName: Nemo
+    faceSprite: {fileID: 21300000, guid: 65d3a420264124d3ba6dbc2df85ea5bd, type: 3}
+    currentSentence: "(El tel\xE9fono deber\xEDa estar en la plaza, cerca de la entrada
+      del pueblo.)"
+  cantEnter:
+  - characterName: Nemo
+    faceSprite: {fileID: 21300000, guid: 056a3dfb394a240038fff36e2a397905, type: 3}
+    currentSentence: ...
+  - characterName: Nemo
+    faceSprite: {fileID: 21300000, guid: 056a3dfb394a240038fff36e2a397905, type: 3}
+    currentSentence: "(La puerta est\xE1 cerrada. Deber\xEDa volver en otro momento.)"
+  - characterName: Nemo
+    faceSprite: {fileID: 21300000, guid: 056a3dfb394a240038fff36e2a397905, type: 3}
+    currentSentence: "(Todav\xEDa me quedan algunas puertas a las que llamar.)"
+  interactionText: []
 --- !u!1 &891955082 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7481815903993703265, guid: 955c89f88c1ce456c9e1d9ff01f78952, type: 3}
@@ -6342,6 +6411,44 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 5.875, y: 6.161789}
   m_EdgeRadius: 0
+--- !u!114 &1834134469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1834134463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8931dc4ee9eef48c2bd10a061bfcba0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  telephoneGameObject: {fileID: 2102043785}
+  dialogueUI: {fileID: 1401427418}
+  characterPlaceholder: {fileID: 1344209367}
+  characterName: {fileID: 769993888}
+  sentenceField: {fileID: 1312241146}
+  nextArrow: {fileID: 826633206}
+  interactButton: {fileID: 1976656729}
+  beforeTelephoneText:
+  - characterName: Nemo
+    faceSprite: {fileID: 21300000, guid: 65d3a420264124d3ba6dbc2df85ea5bd, type: 3}
+    currentSentence: "(Deber\xEDa informar al inspector de que he llegado a Helvaasta.)"
+  - characterName: Nemo
+    faceSprite: {fileID: 21300000, guid: 65d3a420264124d3ba6dbc2df85ea5bd, type: 3}
+    currentSentence: "(El tel\xE9fono deber\xEDa estar en la plaza, cerca de la entrada
+      del pueblo.)"
+  cantEnter:
+  - characterName: Nemo
+    faceSprite: {fileID: 21300000, guid: 056a3dfb394a240038fff36e2a397905, type: 3}
+    currentSentence: ...
+  - characterName: Nemo
+    faceSprite: {fileID: 21300000, guid: 056a3dfb394a240038fff36e2a397905, type: 3}
+    currentSentence: "(La puerta est\xE1 cerrada. Deber\xEDa volver en otro momento.)"
+  - characterName: Nemo
+    faceSprite: {fileID: 21300000, guid: 056a3dfb394a240038fff36e2a397905, type: 3}
+    currentSentence: "(Todav\xEDa me quedan algunas puertas a las que llamar.)"
+  interactionText: []
 --- !u!1 &1872418811
 GameObject:
   m_ObjectHideFlags: 0
@@ -6903,7 +7010,7 @@ PrefabInstance:
       addedObject: {fileID: 707114840}
     - targetCorrespondingSourceObject: {fileID: 3005232080229534921, guid: 955c89f88c1ce456c9e1d9ff01f78952, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 707114839}
+      addedObject: {fileID: 707114843}
     - targetCorrespondingSourceObject: {fileID: 6982996324429214798, guid: 955c89f88c1ce456c9e1d9ff01f78952, type: 3}
       insertIndex: -1
       addedObject: {fileID: 854753619}
@@ -6912,7 +7019,7 @@ PrefabInstance:
       addedObject: {fileID: 854753623}
     - targetCorrespondingSourceObject: {fileID: 6982996324429214798, guid: 955c89f88c1ce456c9e1d9ff01f78952, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 854753622}
+      addedObject: {fileID: 854753626}
     - targetCorrespondingSourceObject: {fileID: -8360076035486653463, guid: 955c89f88c1ce456c9e1d9ff01f78952, type: 3}
       insertIndex: -1
       addedObject: {fileID: 764481182}
@@ -6945,7 +7052,7 @@ PrefabInstance:
       addedObject: {fileID: 1934921552}
     - targetCorrespondingSourceObject: {fileID: 4732880936516172553, guid: 955c89f88c1ce456c9e1d9ff01f78952, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1934921551}
+      addedObject: {fileID: 1934921555}
     - targetCorrespondingSourceObject: {fileID: -3959706912491130885, guid: 955c89f88c1ce456c9e1d9ff01f78952, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1518784340}
@@ -6984,7 +7091,7 @@ PrefabInstance:
       addedObject: {fileID: 80144493}
     - targetCorrespondingSourceObject: {fileID: 4524413463695813048, guid: 955c89f88c1ce456c9e1d9ff01f78952, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 80144492}
+      addedObject: {fileID: 80144496}
     - targetCorrespondingSourceObject: {fileID: 4337286127338384662, guid: 955c89f88c1ce456c9e1d9ff01f78952, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1679680700}
@@ -7005,7 +7112,7 @@ PrefabInstance:
       addedObject: {fileID: 651959533}
     - targetCorrespondingSourceObject: {fileID: -4775722183439514679, guid: 955c89f88c1ce456c9e1d9ff01f78952, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 651959532}
+      addedObject: {fileID: 651959536}
     - targetCorrespondingSourceObject: {fileID: -2706820360592962797, guid: 955c89f88c1ce456c9e1d9ff01f78952, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1688245115}
@@ -7027,6 +7134,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8455458006342963102, guid: 955c89f88c1ce456c9e1d9ff01f78952, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1834134466}
+    - targetCorrespondingSourceObject: {fileID: 8455458006342963102, guid: 955c89f88c1ce456c9e1d9ff01f78952, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1834134469}
     - targetCorrespondingSourceObject: {fileID: -5767165931414265337, guid: 955c89f88c1ce456c9e1d9ff01f78952, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1048446095}
@@ -7059,7 +7169,7 @@ PrefabInstance:
       addedObject: {fileID: 793485874}
     - targetCorrespondingSourceObject: {fileID: -130595423984851579, guid: 955c89f88c1ce456c9e1d9ff01f78952, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 793485873}
+      addedObject: {fileID: 793485877}
     - targetCorrespondingSourceObject: {fileID: 9061183867042130679, guid: 955c89f88c1ce456c9e1d9ff01f78952, type: 3}
       insertIndex: -1
       addedObject: {fileID: 61241600}
@@ -7068,7 +7178,7 @@ PrefabInstance:
       addedObject: {fileID: 61241604}
     - targetCorrespondingSourceObject: {fileID: 9061183867042130679, guid: 955c89f88c1ce456c9e1d9ff01f78952, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 61241603}
+      addedObject: {fileID: 61241607}
     - targetCorrespondingSourceObject: {fileID: 6236601809944603019, guid: 955c89f88c1ce456c9e1d9ff01f78952, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1218665802}
@@ -7107,7 +7217,7 @@ PrefabInstance:
       addedObject: {fileID: 1957322142}
     - targetCorrespondingSourceObject: {fileID: -3707402873403201721, guid: 955c89f88c1ce456c9e1d9ff01f78952, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1957322141}
+      addedObject: {fileID: 1957322145}
     - targetCorrespondingSourceObject: {fileID: -8892816288258187321, guid: 955c89f88c1ce456c9e1d9ff01f78952, type: 3}
       insertIndex: -1
       addedObject: {fileID: 473532396}
@@ -7295,32 +7405,6 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
---- !u!114 &1934921551
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1934921545}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 694a3d3fde1bf46d5b624c7820e936d4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogueUI: {fileID: 1401427418}
-  characterPlaceholder: {fileID: 1344209367}
-  characterName: {fileID: 769993888}
-  sentenceField: {fileID: 1312241146}
-  nextArrow: {fileID: 826633206}
-  interactButton: {fileID: 1976656729}
-  interactionText:
-  - characterName: Nemo
-    faceSprite: {fileID: 21300000, guid: 65d3a420264124d3ba6dbc2df85ea5bd, type: 3}
-    currentSentence: "(Deber\xEDa informar al inspector de que he llegado a Helvaasta.)"
-  - characterName: Nemo
-    faceSprite: {fileID: 21300000, guid: 65d3a420264124d3ba6dbc2df85ea5bd, type: 3}
-    currentSentence: "(El tel\xE9fono est\xE1 en la plaza, cerca de la entrada del
-      pueblo.)"
 --- !u!61 &1934921552
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7366,6 +7450,44 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.9137812, y: 2.369461}
   m_EdgeRadius: 0
+--- !u!114 &1934921555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1934921545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8931dc4ee9eef48c2bd10a061bfcba0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  telephoneGameObject: {fileID: 2102043785}
+  dialogueUI: {fileID: 1401427418}
+  characterPlaceholder: {fileID: 1344209367}
+  characterName: {fileID: 769993888}
+  sentenceField: {fileID: 1312241146}
+  nextArrow: {fileID: 826633206}
+  interactButton: {fileID: 1976656729}
+  beforeTelephoneText:
+  - characterName: Nemo
+    faceSprite: {fileID: 21300000, guid: 65d3a420264124d3ba6dbc2df85ea5bd, type: 3}
+    currentSentence: "(Deber\xEDa informar al inspector de que he llegado a Helvaasta.)"
+  - characterName: Nemo
+    faceSprite: {fileID: 21300000, guid: 65d3a420264124d3ba6dbc2df85ea5bd, type: 3}
+    currentSentence: "(El tel\xE9fono deber\xEDa estar en la plaza, cerca de la entrada
+      del pueblo.)"
+  cantEnter:
+  - characterName: Nemo
+    faceSprite: {fileID: 21300000, guid: 056a3dfb394a240038fff36e2a397905, type: 3}
+    currentSentence: ...
+  - characterName: Nemo
+    faceSprite: {fileID: 21300000, guid: 056a3dfb394a240038fff36e2a397905, type: 3}
+    currentSentence: "(La puerta est\xE1 cerrada. Deber\xEDa volver en otro momento.)"
+  - characterName: Nemo
+    faceSprite: {fileID: 21300000, guid: 056a3dfb394a240038fff36e2a397905, type: 3}
+    currentSentence: "(Todav\xEDa me quedan algunas puertas a las que llamar.)"
+  interactionText: []
 --- !u!1 &1957322135 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3707402873403201721, guid: 955c89f88c1ce456c9e1d9ff01f78952, type: 3}
@@ -7419,33 +7541,6 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
---- !u!114 &1957322141
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1957322135}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 694a3d3fde1bf46d5b624c7820e936d4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogueUI: {fileID: 1401427418}
-  characterPlaceholder: {fileID: 1344209367}
-  characterName: {fileID: 769993888}
-  sentenceField: {fileID: 1312241146}
-  nextArrow: {fileID: 826633206}
-  interactButton: {fileID: 1976656729}
-  interactionText:
-  - characterName: Nemo
-    faceSprite: {fileID: 21300000, guid: 7dd58a106d7b64704960272f3181bfc4, type: 3}
-    currentSentence: (El famoso claustro de Helvaasta. Primero fue esto. Luego se
-      hizo el barrio.)
-  - characterName: Nemo
-    faceSprite: {fileID: 21300000, guid: 65d3a420264124d3ba6dbc2df85ea5bd, type: 3}
-    currentSentence: "(La curandera no puede vivir aqu\xED. Es un monasterio de clausura.
-      Las mujeres que viven aqu\xED no pueden salir, seg\xFAn tengo entendido.)"
 --- !u!61 &1957322142
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7491,6 +7586,44 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4.095352, y: 3.4114075}
   m_EdgeRadius: 0
+--- !u!114 &1957322145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1957322135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8931dc4ee9eef48c2bd10a061bfcba0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  telephoneGameObject: {fileID: 2102043785}
+  dialogueUI: {fileID: 1401427418}
+  characterPlaceholder: {fileID: 1344209367}
+  characterName: {fileID: 769993888}
+  sentenceField: {fileID: 1312241146}
+  nextArrow: {fileID: 826633206}
+  interactButton: {fileID: 1976656729}
+  beforeTelephoneText:
+  - characterName: Nemo
+    faceSprite: {fileID: 21300000, guid: 65d3a420264124d3ba6dbc2df85ea5bd, type: 3}
+    currentSentence: "(Deber\xEDa informar al inspector de que he llegado a Helvaasta.)"
+  - characterName: Nemo
+    faceSprite: {fileID: 21300000, guid: 65d3a420264124d3ba6dbc2df85ea5bd, type: 3}
+    currentSentence: "(El tel\xE9fono deber\xEDa estar en la plaza, cerca de la entrada
+      del pueblo.)"
+  cantEnter:
+  - characterName: Nemo
+    faceSprite: {fileID: 21300000, guid: 056a3dfb394a240038fff36e2a397905, type: 3}
+    currentSentence: ...
+  - characterName: Nemo
+    faceSprite: {fileID: 21300000, guid: 056a3dfb394a240038fff36e2a397905, type: 3}
+    currentSentence: "(La puerta est\xE1 cerrada. Deber\xEDa volver en otro momento.)"
+  - characterName: Nemo
+    faceSprite: {fileID: 21300000, guid: 056a3dfb394a240038fff36e2a397905, type: 3}
+    currentSentence: "(Todav\xEDa me quedan algunas puertas a las que llamar.)"
+  interactionText: []
 --- !u!1 &1976656729 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 548489310745255389, guid: c8cc8d84970934adf975b8e9548d1874, type: 3}
@@ -7826,6 +7959,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e969aa2cedd847719e4fc64cfb47b1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  alreadyInformed: 0
   dialogueUI: {fileID: 1401427418}
   characterPlaceholder: {fileID: 1344209367}
   characterName: {fileID: 769993888}
@@ -7834,14 +7968,8 @@ MonoBehaviour:
   interactButton: {fileID: 1976656729}
   firstTelephone:
   - characterName: Nemo
-    faceSprite: {fileID: 21300000, guid: 2730f97b11f054405abffa410d875d22, type: 3}
-    currentSentence: "(Tengo que acabar cuanto antes y salir de aqu\xED.)"
-  - characterName: Nemo
     faceSprite: {fileID: 21300000, guid: 65d3a420264124d3ba6dbc2df85ea5bd, type: 3}
-    currentSentence: (Voy a informar de que he llegado.)
-  - characterName: Nemo
-    faceSprite: {fileID: 21300000, guid: 65d3a420264124d3ba6dbc2df85ea5bd, type: 3}
-    currentSentence: (...)
+    currentSentence: ...
   - characterName: Secretario
     faceSprite: {fileID: 21300000, guid: 8ecedaae2c8ff48e0bf45ab411b02f48, type: 3}
     currentSentence: "Central de Polic\xEDa de Breonstl."
@@ -7851,15 +7979,15 @@ MonoBehaviour:
       ponerme con el jefe?"
   - characterName: Secretario
     faceSprite: {fileID: 21300000, guid: 8ecedaae2c8ff48e0bf45ab411b02f48, type: 3}
-    currentSentence: Buenas tardes, Nemo. Enseguida le pongo con el inspector jefe.
+    currentSentence: Por supuesto. Espere un momento.
   - characterName: Nemo
     faceSprite: {fileID: 21300000, guid: 65d3a420264124d3ba6dbc2df85ea5bd, type: 3}
     currentSentence: ...
   - characterName: Nemo
     faceSprite: {fileID: 21300000, guid: 056a3dfb394a240038fff36e2a397905, type: 3}
-    currentSentence: "(Cre\xED que estar\xEDa m\xE1s pendiente del tel\xE9fono.)"
+    currentSentence: ...
   - characterName: Nemo
-    faceSprite: {fileID: 21300000, guid: 056a3dfb394a240038fff36e2a397905, type: 3}
+    faceSprite: {fileID: 21300000, guid: 5ccaadcddd534426bbd87bfc1b3bbfd6, type: 3}
     currentSentence: ...
   - characterName: Inspector
     faceSprite: {fileID: 21300000, guid: 8ecedaae2c8ff48e0bf45ab411b02f48, type: 3}
@@ -7872,27 +8000,22 @@ MonoBehaviour:
     currentSentence: "\xA1Si tardases m\xE1s hubiera acabado incluso con mi \xFAltimo
       pelo!"
   - characterName: Nemo
-    faceSprite: {fileID: 21300000, guid: 2730f97b11f054405abffa410d875d22, type: 3}
-    currentSentence: "Lo siento, se\xF1or. Eso escapaba por completo a mi competencia."
-  - characterName: Inspector
-    faceSprite: {fileID: 21300000, guid: 8ecedaae2c8ff48e0bf45ab411b02f48, type: 3}
-    currentSentence: "\xA1Ya lo s\xE9, chaval! Tenemos que comenzar a incentivar
-      la velocidad. \xA1Deja de ser tan r\xEDgido! \xA1Ja, ja, ja!"
-  - characterName: Nemo
     faceSprite: {fileID: 21300000, guid: 056a3dfb394a240038fff36e2a397905, type: 3}
     currentSentence: ...
   - characterName: Inspector
     faceSprite: {fileID: 21300000, guid: 8ecedaae2c8ff48e0bf45ab411b02f48, type: 3}
-    currentSentence: "Esc\xFAchame bien. Ya te hab\xEDa comentado los detalles por
-      encima, pero ahora va lo duro. "
+    currentSentence: "Esc\xFAchame bien. Lo que dec\xEDamos: Est\xE1s ah\xED para
+      encontrar al ni\xF1o o al culpable. A estas alturas nos da igual qu\xE9 encuentres,
+      pero tienes que encontrar algo."
+  - characterName: Nemo
+    faceSprite: {fileID: 21300000, guid: 65d3a420264124d3ba6dbc2df85ea5bd, type: 3}
+    currentSentence: "Correcto. \xBFHa conseguido ya las fichas de los residentes
+      de Helvaasta?"
   - characterName: Inspector
     faceSprite: {fileID: 21300000, guid: 8ecedaae2c8ff48e0bf45ab411b02f48, type: 3}
-    currentSentence: "Recuerda: Est\xE1s ah\xED para encontrar al ni\xF1o o al culpable.
-      En este momento nos da igual qu\xE9 encuentres, pero tienes que encontrar algo. "
-  - characterName: Inspector
-    faceSprite: {fileID: 21300000, guid: 8ecedaae2c8ff48e0bf45ab411b02f48, type: 3}
-    currentSentence: "Y ya sabes c\xF3mo est\xE1n las cosas en el pueblo. El ni\xF1o
-      era el hijo de un pez gordo y quieren saber ya qui\xE9n est\xE1 tras las desapariciones."
+    currentSentence: "No, todav\xEDa no me las han tra\xEDdo. Ll\xE1mame dentro de
+      un rato, a ver si te puedo decir algo m\xE1s. T\xFA haz interrogatorios y averigua
+      algo mientras tanto, que se me empiezan a echar al cuello. "
   - characterName: Inspector
     faceSprite: {fileID: 21300000, guid: 8ecedaae2c8ff48e0bf45ab411b02f48, type: 3}
     currentSentence: "Te hab\xEDa comentado ya que este es el s\xE9ptimo ni\xF1o
@@ -7922,16 +8045,15 @@ MonoBehaviour:
     currentSentence: ...
   - characterName: Nemo
     faceSprite: {fileID: 21300000, guid: 2730f97b11f054405abffa410d875d22, type: 3}
-    currentSentence: "Entiendo que quieren realizar una ejecuci\xF3n p\xFAblica como
-      muestra de poder."
+    currentSentence: 'Entiendo que quieren la cabeza de alguien. '
   - characterName: Inspector
     faceSprite: {fileID: 21300000, guid: 8ecedaae2c8ff48e0bf45ab411b02f48, type: 3}
-    currentSentence: Eres listo, Nemo. Ya los conoces.
+    currentSentence: 'Eres listo, Nemo. Ya conoces a los de arriba. '
   - characterName: Inspector
     faceSprite: {fileID: 21300000, guid: 8ecedaae2c8ff48e0bf45ab411b02f48, type: 3}
-    currentSentence: "Lo que no sab\xEDa yo hasta hace quince minutos era que quieren
-      realizar el juicio ma\xF1ana a las doce de la ma\xF1ana para tener la ejecuci\xF3n
-      a las cuatro de la tarde. "
+    currentSentence: "Lo que no sab\xEDa yo hasta hace quince minutos es que quieren
+      celebrar el juicio ma\xF1ana al mediod\xEDa para tener la ejecuci\xF3n a las
+      cuatro de la tarde. "
   - characterName: Nemo
     faceSprite: {fileID: 21300000, guid: 3bbd1b5b5a64548848e0cce4a1b11209, type: 3}
     currentSentence: ...
@@ -7944,169 +8066,74 @@ MonoBehaviour:
   - characterName: Inspector
     faceSprite: {fileID: 21300000, guid: 8ecedaae2c8ff48e0bf45ab411b02f48, type: 3}
     currentSentence: 'Vale, Nemo. Vamos a dejar clara una cosa. Yo no voy a morir
-      por nadie de ese barrio. '
-  - characterName: Inspector
-    faceSprite: {fileID: 21300000, guid: 8ecedaae2c8ff48e0bf45ab411b02f48, type: 3}
-    currentSentence: "Y espero que t\xFA tambi\xE9n seas lo suficiente listo como
-      para tampoco hacerlo. "
+      por nadie de ese barrio. Y espero que seas lo suficientemente listo como para
+      tampoco hacerlo. '
   - characterName: Inspector
     faceSprite: {fileID: 21300000, guid: 8ecedaae2c8ff48e0bf45ab411b02f48, type: 3}
     currentSentence: "Tienes una carrera brillante. Aqu\xED te apreciamos. Pero si
-      antes de hoy por la noche no me traes un culpable, se acab\xF3 tu carrera.
-      Ma\xF1ana est\xE1s en la horca. "
+      no me traes al ni\xF1o o a un culpable hoy mismo, se acab\xF3 lo que se daba.
+      Ma\xF1ana est\xE1s en la horca."
   - characterName: Inspector
     faceSprite: {fileID: 21300000, guid: 8ecedaae2c8ff48e0bf45ab411b02f48, type: 3}
-    currentSentence: "\xBFLo entiendes?"
+    currentSentence: "\xBFMe entiendes?"
   - characterName: Nemo
     faceSprite: {fileID: 21300000, guid: 2730f97b11f054405abffa410d875d22, type: 3}
-    currentSentence: "\u2026"
+    currentSentence: ...
   - characterName: Nemo
     faceSprite: {fileID: 21300000, guid: 2730f97b11f054405abffa410d875d22, type: 3}
     currentSentence: "S\xED, se\xF1or."
   - characterName: Inspector
     faceSprite: {fileID: 21300000, guid: 8ecedaae2c8ff48e0bf45ab411b02f48, type: 3}
-    currentSentence: "Muy bien, Nemo. Lo ideal es que me traigas al ni\xF1o. Si no
-      puedes traerme al ni\xF1o, me conformo con un culpable. "
-  - characterName: Inspector
-    faceSprite: {fileID: 21300000, guid: 8ecedaae2c8ff48e0bf45ab411b02f48, type: 3}
     currentSentence: "Mejor si es el culpable. Pero si no lo es, yo no te voy a culpar,
       \xBFvale? Nadie tiene por qu\xE9 saberlo. A m\xED me han dejado claro que si
       no tienen al ni\xF1o colgar\xE1n a alguien. No me han pedido al culpable."
-  - characterName: Inspector
-    faceSprite: {fileID: 21300000, guid: 8ecedaae2c8ff48e0bf45ab411b02f48, type: 3}
-    currentSentence: 'Pero repito. Mejor si es el culpable. '
   - characterName: Nemo
     faceSprite: {fileID: 21300000, guid: 056a3dfb394a240038fff36e2a397905, type: 3}
     currentSentence: "\u2026"
+  - characterName: Inspector
+    faceSprite: {fileID: 21300000, guid: 8ecedaae2c8ff48e0bf45ab411b02f48, type: 3}
+    currentSentence: "En todo caso, el culpable deber\xEDa estar ah\xED. Si alguien
+      se intenta fugar, da por hecho que es \xE9l. \xBFPor qu\xE9 se iba a fugar
+      si no? "
+  - characterName: Inspector
+    faceSprite: {fileID: 21300000, guid: 8ecedaae2c8ff48e0bf45ab411b02f48, type: 3}
+    currentSentence: "Y por favor, si tienes que echarte a adivinar, no escojas a
+      una mujer anciana. As\xED no nos vamos a ganar la simpat\xEDa de nadie. "
   - characterName: Nemo
     faceSprite: {fileID: 21300000, guid: 056a3dfb394a240038fff36e2a397905, type: 3}
-    currentSentence: (Menos mal que la mujer de la centralita es la esposa del inspector.)
-  - characterName: Inspector
-    faceSprite: {fileID: 21300000, guid: 8ecedaae2c8ff48e0bf45ab411b02f48, type: 3}
-    currentSentence: "El culpable deber\xEDa estar ah\xED, entre toda esa gente.
-      Si alguien se fuga, da por hecho que es el culpable. Tiene que serlo. \xBFPor
-      qu\xE9 se iba a fugar si no?"
-  - characterName: Nemo
-    faceSprite: {fileID: 21300000, guid: 5ccaadcddd534426bbd87bfc1b3bbfd6, type: 3}
-    currentSentence: "(\u2026 No comparto esta afirmaci\xF3n.)"
-  - characterName: Inspector
-    faceSprite: {fileID: 21300000, guid: 8ecedaae2c8ff48e0bf45ab411b02f48, type: 3}
-    currentSentence: "Y t\xFA eres mejor que nadie encontrando a los que se fugan.
-      Solo habla con los guardias de la entrada si ocurre y gu\xEDalos para que te
-      ayuden. "
-  - characterName: Nemo
-    faceSprite: {fileID: 21300000, guid: 65d3a420264124d3ba6dbc2df85ea5bd, type: 3}
-    currentSentence: Entendido, inspector.
-  - characterName: Inspector
-    faceSprite: {fileID: 21300000, guid: 8ecedaae2c8ff48e0bf45ab411b02f48, type: 3}
-    currentSentence: "Vale, Nemo. Si todo va bien y encuentras al ni\xF1o o a un
-      culpable, me llamas y me dices que tienes al ni\xF1o o el nombre del culpable. "
-  - characterName: Inspector
-    faceSprite: {fileID: 21300000, guid: 8ecedaae2c8ff48e0bf45ab411b02f48, type: 3}
-    currentSentence: "Yo empiezo los tr\xE1mites y t\xFA hablas con los guardias
-      para detenerlo. El que digas, se viene. Sin segundas oportunidades. Y me temo
-      que, vaya como vaya el juicio, pasado ma\xF1ana estar\xE1 criando malvas. "
-  - characterName: Inspector
-    faceSprite: {fileID: 21300000, guid: 8ecedaae2c8ff48e0bf45ab411b02f48, type: 3}
-    currentSentence: "Nemo. Esc\xFAchame bien."
-  - characterName: Nemo
-    faceSprite: {fileID: 21300000, guid: 65d3a420264124d3ba6dbc2df85ea5bd, type: 3}
     currentSentence: ...
   - characterName: Inspector
     faceSprite: {fileID: 21300000, guid: 8ecedaae2c8ff48e0bf45ab411b02f48, type: 3}
-    currentSentence: 'La gente quiere resultados ya. Tanto los de arriba como el
-      pueblo. '
+    currentSentence: "Vale, yo creo que lo has entendido todo. Cuando tengas al ni\xF1o
+      o el nombre del culpable, me llamas y me encargo yo del resto. El que digas
+      se viene, sin segundas oportunidades."
   - characterName: Inspector
     faceSprite: {fileID: 21300000, guid: 8ecedaae2c8ff48e0bf45ab411b02f48, type: 3}
-    currentSentence: "Acu\xE9rdate de este grupo terrorista, Syabe. Si lo del ni\xF1o
-      se repite, te aseguro que todo se va al garete. Perdemos la hegemon\xEDa."
-  - characterName: Inspector
-    faceSprite: {fileID: 21300000, guid: 8ecedaae2c8ff48e0bf45ab411b02f48, type: 3}
-    currentSentence: "Syabe est\xE1 ganando adeptos. Y no quiero ni imaginar qu\xE9
-      va a pasar con nosotros si ellos toman el poder. "
-  - characterName: Inspector
-    faceSprite: {fileID: 21300000, guid: 8ecedaae2c8ff48e0bf45ab411b02f48, type: 3}
-    currentSentence: "Van a ser las tres y veinte, \xBFvale? A las diez de la noche
-      tienes que haber encontrado a alguien o, si no, haber decidido qui\xE9n es
-      un buen candidato para una ejecuci\xF3n p\xFAblica. "
-  - characterName: Inspector
-    faceSprite: {fileID: 21300000, guid: 8ecedaae2c8ff48e0bf45ab411b02f48, type: 3}
-    currentSentence: "Y, por favor, no escojas a una mujer anciana si no encuentras
-      a un culpable. No ganaremos la simpat\xEDa de nadie ahorc\xE1ndola. "
-  - characterName: Inspector
-    faceSprite: {fileID: 21300000, guid: 8ecedaae2c8ff48e0bf45ab411b02f48, type: 3}
-    currentSentence: "Supongo que te acuerdas del medio-mot\xEDn que ocurri\xF3 por
-      la \xFAltima. "
-  - characterName: Nemo
-    faceSprite: {fileID: 21300000, guid: 2730f97b11f054405abffa410d875d22, type: 3}
-    currentSentence: Por supuesto.
-  - characterName: Inspector
-    faceSprite: {fileID: 21300000, guid: 8ecedaae2c8ff48e0bf45ab411b02f48, type: 3}
-    currentSentence: 'Esto se va al garete, Nemo. Trae a alguien. Cuanto antes mejor. '
-  - characterName: Inspector
-    faceSprite: {fileID: 21300000, guid: 8ecedaae2c8ff48e0bf45ab411b02f48, type: 3}
-    currentSentence: "Mira. Son nueve casas, \xBFvale? Si le dedicas veinte minutos
-      a cada interrogatorio, incluso puedes hacer segundas o terceras entrevistas
-      para cerciorarte. "
-  - characterName: Inspector
-    faceSprite: {fileID: 21300000, guid: 8ecedaae2c8ff48e0bf45ab411b02f48, type: 3}
-    currentSentence: "Si me dan las cuentas\u2026 diecinueve franjas de veinte minutos
-      hasta las diez. Aprov\xE9chalas bien. "
-  - characterName: Inspector
-    faceSprite: {fileID: 21300000, guid: 8ecedaae2c8ff48e0bf45ab411b02f48, type: 3}
-    currentSentence: "Supongo que ellos hablar\xE1n contigo las veces que haga falta
-      para demostrar su inocencia. Pero tampoco te pases. "
-  - characterName: Inspector
-    faceSprite: {fileID: 21300000, guid: 8ecedaae2c8ff48e0bf45ab411b02f48, type: 3}
-    currentSentence: "Creo que est\xE1 bien que empieces por una mujer que se llama
-      Kaida. Es curandera. No s\xE9 si te suena. "
-  - characterName: Inspector
-    faceSprite: {fileID: 21300000, guid: 8ecedaae2c8ff48e0bf45ab411b02f48, type: 3}
-    currentSentence: "Ten\xEDa muy mala fama por aqu\xED. Y creo que hubo un problema
-      con ella y unos ni\xF1os. Por eso se fue del centro de Breonstl a Helvaasta. "
-  - characterName: Inspector
-    faceSprite: {fileID: 21300000, guid: 8ecedaae2c8ff48e0bf45ab411b02f48, type: 3}
-    currentSentence: "Empieza por ella. Vive en una casa con el tejado rojo, me han
-      dicho, al norte de la plaza del pueblo. Yo nunca he estado all\xED, as\xED
-      que no me hagas mucho caso."
-  - characterName: Inspector
-    faceSprite: {fileID: 21300000, guid: 8ecedaae2c8ff48e0bf45ab411b02f48, type: 3}
-    currentSentence: "Empieza por ella. Vive en una casa con el tejado rojo, me han
-      dicho, al norte de la plaza del pueblo. Pero yo nunca he estado all\xED, as\xED
-      que no me hagas mucho caso."
-  - characterName: Inspector
-    faceSprite: {fileID: 21300000, guid: 8ecedaae2c8ff48e0bf45ab411b02f48, type: 3}
-    currentSentence: 'Kaida, se llama. Curandera. '
-  - characterName: Inspector
-    faceSprite: {fileID: 21300000, guid: 8ecedaae2c8ff48e0bf45ab411b02f48, type: 3}
-    currentSentence: "Y ante todo, no desperdicies el tiempo. Si resolvemos eso te
-      asciendo, \xBFvale, Nemo?"
-  - characterName: Inspector
-    faceSprite: {fileID: 21300000, guid: 8ecedaae2c8ff48e0bf45ab411b02f48, type: 3}
-    currentSentence: "Dejas la investigaci\xF3n de campo y pasas a dirigirla. \xBFEntendido? "
+    currentSentence: "Ante todo, no desperdicies el tiempo. Si resolvemos esto te
+      asciendo, \xBFvale, Nemo? Dejas la investigaci\xF3n de campo y pasas a dirigirla.
+      \xBFEntendido?"
   - characterName: Nemo
     faceSprite: {fileID: 21300000, guid: 7dd58a106d7b64704960272f3181bfc4, type: 3}
     currentSentence: "S\xED, se\xF1or. Muchas gracias."
   - characterName: Inspector
     faceSprite: {fileID: 21300000, guid: 8ecedaae2c8ff48e0bf45ab411b02f48, type: 3}
-    currentSentence: "Conf\xEDo en ti. Espero que ma\xF1ana sepas lucir una nueva
+    currentSentence: "Conf\xEDo en ti. Espero que ma\xF1ana puedas lucir una nueva
       placa y no tengas que conformarte con una cuerda al cuello. S\xE9 listo, Nemo."
   - characterName: Nemo
     faceSprite: {fileID: 21300000, guid: 2730f97b11f054405abffa410d875d22, type: 3}
     currentSentence: ...
   - characterName: Nemo
     faceSprite: {fileID: 21300000, guid: 4ea6a4ec762104ae9813f9a2bbe015b8, type: 3}
-    currentSentence: "(Deber\xEDa ponerme manos a la obra. No hay tiempo.)"
+    currentSentence: "(Son las 15:20. Si dedico m\xE1s o menos 20 minutos a cada
+      interrogatorio, podr\xE9 hacer un total de 19. Deber\xEDa escoger con cuidado.)"
   nextTelephone:
   - characterName: Nemo
-    faceSprite: {fileID: 21300000, guid: 056a3dfb394a240038fff36e2a397905, type: 3}
-    currentSentence: (No es buena idea llamar al inspector ahora mismo.)
+    faceSprite: {fileID: 21300000, guid: 65d3a420264124d3ba6dbc2df85ea5bd, type: 3}
+    currentSentence: (El inspector me dijo que llamase de nuevo dentro de un rato.)
   - characterName: Nemo
-    faceSprite: {fileID: 21300000, guid: 056a3dfb394a240038fff36e2a397905, type: 3}
-    currentSentence: "(Todav\xEDa no he hablado con nadie.)"
-  - characterName: Nemo
-    faceSprite: {fileID: 21300000, guid: 4ea6a4ec762104ae9813f9a2bbe015b8, type: 3}
-    currentSentence: "(Tengo que encontrar al ni\xF1o o al culpable.)"
+    faceSprite: {fileID: 21300000, guid: 65d3a420264124d3ba6dbc2df85ea5bd, type: 3}
+    currentSentence: "(Deber\xEDa hacer primero una ronda de interrogatorios a cada
+      sospechoso.)"
   - characterName: Nemo
     faceSprite: {fileID: 21300000, guid: 2730f97b11f054405abffa410d875d22, type: 3}
     currentSentence: (No debo dejarme guiar por el instinto de supervivencia en este
