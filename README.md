@@ -10,8 +10,8 @@ Es necesario añadir archivos al repositorio de GitHub, no subidos a la platafor
 
 ## Archivos necesarios para completar el repositorio:
 ### Carpeta de Library
-- Enlace: https://mega.nz/file/1U0nSJaS#hharAshcwHvcXcqqhhAfvxciwY8ZwXP7rJz0iRHUmxk
-- Última actualización: 24/10/2024, 14:20. [Material de *Proyecto 3. App interactiva*]
+- Enlace: https://mega.nz/file/dMlGWT6A#6vqNeTvWVNgpXwbknPeHjcVQ_J5IPR5rP1cBec6mv1A
+- Última actualización: 17/11/2024, 23:54. [Actualización para la PEC2]
 - Ubicación: Raíz del proyecto.
 ```
 ./Library
