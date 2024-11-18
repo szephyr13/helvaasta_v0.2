@@ -93,6 +93,7 @@ public class DialogueOnMap : MonoBehaviour
             firstEntrance = false;
             Time.timeScale = 1f;
             timeToGo = true;
+            Destroy(GetComponent<BoxCollider2D>());
         }
     }
 
