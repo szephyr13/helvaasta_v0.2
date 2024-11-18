@@ -3,11 +3,11 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 
-
-//VARIANTE DE DIALOGUEONMAP PARA EL TELÉFONO
-public class TelephoneInteraction : MonoBehaviour
+//script para la conversación con los guardias en la escena 2
+public class HouseInteraction : MonoBehaviour
 {
     private bool rangeTrigger;
+    private bool timeToGo;
     private bool didDialogueStart = false;
     private int lineIndex;
     private float textSpeed = 0.05f;
@@ -17,27 +17,46 @@ public class TelephoneInteraction : MonoBehaviour
     public TMP_Text characterName;
     public TMP_Text sentenceField;
     public GameObject nextArrow;
-    public GameObject interactButton;
-    public ConversationPart[] firstTelephone;
-    public ConversationPart[] nextTelephone;
     public ConversationPart[] currentInteraction;
+    public ConversationPart[] beforeTelephone;
+    public ConversationPart[] afterTelephone;
 
-    public bool didNemoInform;
+    [SerializeField] private GameObject telephone;
+    private bool didNemoInform;
 
-    //se determina que la interacción actual es la primera (al inicio)
-    void Start(){
-        currentInteraction = firstTelephone;
-        didNemoInform = false;
+    //al iniciar, se indica que se va a tener la primera conversación (firstEntrance) y que se iniciará la conversación según se entre en la zona de trigger (timeToGo)
+    void Awake() {
+        currentInteraction = beforeTelephone;
+        timeToGo = false;
+        didNemoInform = telephone.GetComponent<TelephoneInteraction>().didNemoInform;
     }
 
-    //en cada update se comprueba si se está en el rango de trigger y se pulsa el botón de interacción.
-    //siendo así, se inicia el diálogo y se tiene en cuenta si el texto se ha terminado de escribir o no
+    //se comprueba si se tiene que iniciar la conversación (timeToGo) y, dependiendo de si es la primera conversación o la segunda, se utiliza una función u otra 
+    //la diferencia se aprecia en la primera línea tras el else if (nextInteraction&&rangeTrigger) - en próximas versiones se optimizará
     void Update(){
-        if (rangeTrigger) {
-            //interactButton.SetActive(true);
-            if (Input.GetButtonDown("Fire1")){
+
+        if (timeToGo) {
+        } else{
+            if (rangeTrigger && !didNemoInform) {
                 if (!didDialogueStart){
-                    AudioManager.instance.PlaySFX("UI-Click");
+                    StartDialogue();
+                } else if (sentenceField.text == currentInteraction[lineIndex].currentSentence) {
+                    nextArrow.SetActive(true);
+                    if (Input.GetButtonDown("Fire1")){
+                        AudioManager.instance.PlaySFX("UI-Click");
+                        NextDialogueLine();
+                    }
+                } else {
+                    nextArrow.SetActive(false);
+                    if (Input.GetButtonDown("Fire1")){
+                        AudioManager.instance.PlaySFX("UI-Click");
+                        StopAllCoroutines();
+                        sentenceField.text = currentInteraction[lineIndex].currentSentence;
+                    }
+                }
+            } else if (rangeTrigger && didNemoInform) {
+                currentInteraction = afterTelephone;
+                if (!didDialogueStart){
                     StartDialogue();
                 } else if (sentenceField.text == currentInteraction[lineIndex].currentSentence) {
                     nextArrow.SetActive(true);
@@ -54,12 +73,10 @@ public class TelephoneInteraction : MonoBehaviour
                     }
                 }
             }
-        } else{
-            //interactButton.SetActive(false);
-        }
-    } 
+        }    
+    }
 
-    //para comenzar el diálogo se indica, al a vez que se activa la UI y se llama a la correspondiente corrutina.
+    //cuando el dialogo se inicia, se activa la UI, se para el tiempo y se empieza a escribir la frase desde cero
     private void StartDialogue() {
         didDialogueStart = true;
         dialogueUI.SetActive(true);
@@ -68,7 +85,7 @@ public class TelephoneInteraction : MonoBehaviour
         StartCoroutine(ShowLine());
     }
 
-    //se van añadiendo líneas, que se fragmentan con la corrutina hasta que se termina el repositorio de líneas
+    //si sigue habiendo líneas, las muestra. si no, declara que la conversación ya se ha tenido y devuelve la función al punto original
     private void NextDialogueLine(){
         lineIndex++;
         if (lineIndex < currentInteraction.Length){
@@ -77,12 +94,12 @@ public class TelephoneInteraction : MonoBehaviour
             didDialogueStart = false;
             dialogueUI.SetActive(false);
             Time.timeScale = 1f;
-            currentInteraction = nextTelephone;
-            didNemoInform = true;
+            timeToGo = true;
+            Destroy(GetComponent<BoxCollider2D>());
         }
     }
 
-    //Corrutina para ir mostrando las letras con efecto de tipeo
+    ////Corrutina para mostrar poco a poco la frase, con efecto de tipeo.
     private IEnumerator ShowLine(){
         characterName.text = currentInteraction[lineIndex].characterName;
         characterPlaceholder.GetComponent<Image>().sprite = currentInteraction[lineIndex].faceSprite;
@@ -96,7 +113,7 @@ public class TelephoneInteraction : MonoBehaviour
     }
 
 
-    //funciones para detectar si el jugador está en el área de trigger
+    //funciones para detectar el trigger, teniendo en cuenta que la segunda detiene el inicio de la interacción si no se ha salido de la zona de trigger
     private void OnTriggerEnter2D(Collider2D collision){
         if (collision.gameObject.CompareTag("Player")){
             rangeTrigger = true;
@@ -106,7 +123,7 @@ public class TelephoneInteraction : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision){
         if (collision.gameObject.CompareTag("Player")){
             rangeTrigger = false;
+            timeToGo = false;
         }
     }
 }
-
