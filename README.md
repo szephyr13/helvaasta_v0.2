@@ -10,8 +10,8 @@ Es necesario añadir archivos al repositorio de GitHub, no subidos a la platafor
 
 ## Archivos necesarios para completar el repositorio:
 ### Carpeta de Library
-- Enlace: https://mega.nz/file/dMlGWT6A#6vqNeTvWVNgpXwbknPeHjcVQ_J5IPR5rP1cBec6mv1A
-- Última actualización: 17/11/2024, 23:54. [Actualización para la PEC2]
+- Enlace: [https://mega.nz/file/dMlGWT6A#6vqNeTvWVNgpXwbknPeHjcVQ_J5IPR5rP1cBec6mv1A](https://mega.nz/file/MF9FDLqb#Kb3EYMHiYGdBbsBiMxg3Zq4nVXbWp85y6-GHg3G8Npk)
+- Última actualización: 20/11/2024, 12:02. [Actualización para la PEC2-arreglada]
 - Ubicación: Raíz del proyecto.
 ```
 ./Library
