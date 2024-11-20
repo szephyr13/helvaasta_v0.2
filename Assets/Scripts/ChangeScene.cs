@@ -13,13 +13,16 @@ public class ChangeScene : MonoBehaviour
 
     [SerializeField] private GameObject telephone;
     private bool didNemoInform;
-    
 
     //Cuando el jugador entra en la zona de trigger, se carga la escena especificada
     private void OnTriggerEnter2D(Collider2D other) {
-        didNemoInform = telephone.GetComponent<TelephoneInteraction>().didNemoInform;
+        if (telephone)
+        {
+            didNemoInform = telephone.GetComponent<TelephoneInteraction>().didNemoInform;
+        }
+        
         if(other.tag == "Player") {
-            if (this.tag == "HouseEntering")
+            if (tag == "HouseEntering")
             {
                 if (didNemoInform)
                 {
