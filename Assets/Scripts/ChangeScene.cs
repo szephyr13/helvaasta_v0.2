@@ -10,12 +10,25 @@ public class ChangeScene : MonoBehaviour
     public float transitionTime = 1f; //segundos que tarda la escena en cargar tras la animacion
 
     public static int lastSceneIndex; //última escena jugada
+
+    [SerializeField] private GameObject telephone;
+    private bool didNemoInform;
     
 
     //Cuando el jugador entra en la zona de trigger, se carga la escena especificada
     private void OnTriggerEnter2D(Collider2D other) {
+        didNemoInform = telephone.GetComponent<TelephoneInteraction>().didNemoInform;
         if(other.tag == "Player") {
-            StartCoroutine(LoadScene(sceneBuildIndex));
+            if (this.tag == "HouseEntering")
+            {
+                if (didNemoInform)
+                {
+                    StartCoroutine(LoadScene(sceneBuildIndex));
+                }
+            } else
+            {
+                StartCoroutine(LoadScene(sceneBuildIndex));
+            }
         }
     }
 

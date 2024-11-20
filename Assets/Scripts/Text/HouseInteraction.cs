@@ -7,7 +7,6 @@ using UnityEngine.UI;
 public class HouseInteraction : MonoBehaviour
 {
     private bool rangeTrigger;
-    private bool timeToGo;
     private bool didDialogueStart = false;
     private int lineIndex;
     private float textSpeed = 0.05f;
@@ -22,57 +21,57 @@ public class HouseInteraction : MonoBehaviour
     public ConversationPart[] afterTelephone;
 
     [SerializeField] private GameObject telephone;
-    private bool didNemoInform;
+    public bool didNemoInform;
 
     //al iniciar, se indica que se va a tener la primera conversación (firstEntrance) y que se iniciará la conversación según se entre en la zona de trigger (timeToGo)
     void Awake() {
         currentInteraction = beforeTelephone;
-        timeToGo = false;
         didNemoInform = telephone.GetComponent<TelephoneInteraction>().didNemoInform;
     }
 
     //se comprueba si se tiene que iniciar la conversación (timeToGo) y, dependiendo de si es la primera conversación o la segunda, se utiliza una función u otra 
     //la diferencia se aprecia en la primera línea tras el else if (nextInteraction&&rangeTrigger) - en próximas versiones se optimizará
     void Update(){
+        if (rangeTrigger)
+        {
+            //interactButton.SetActive(true);
+            if (Input.GetButtonDown("Fire1"))
+            {
+                didNemoInform = telephone.GetComponent<TelephoneInteraction>().didNemoInform;
+                if (didNemoInform && currentInteraction == beforeTelephone)
+                {
+                    currentInteraction = afterTelephone;
+                }
 
-        if (timeToGo) {
-        } else{
-            if (rangeTrigger && !didNemoInform) {
-                if (!didDialogueStart){
+                if (!didDialogueStart)
+                {
+                    AudioManager.instance.PlaySFX("UI-Click");
                     StartDialogue();
-                } else if (sentenceField.text == currentInteraction[lineIndex].currentSentence) {
+                }
+                else if (sentenceField.text == currentInteraction[lineIndex].currentSentence)
+                {
                     nextArrow.SetActive(true);
-                    if (Input.GetButtonDown("Fire1")){
+                    if (Input.GetButtonDown("Fire1"))
+                    {
                         AudioManager.instance.PlaySFX("UI-Click");
                         NextDialogueLine();
-                    }
-                } else {
-                    nextArrow.SetActive(false);
-                    if (Input.GetButtonDown("Fire1")){
-                        AudioManager.instance.PlaySFX("UI-Click");
-                        StopAllCoroutines();
-                        sentenceField.text = currentInteraction[lineIndex].currentSentence;
                     }
                 }
-            } else if (rangeTrigger && didNemoInform) {
-                currentInteraction = afterTelephone;
-                if (!didDialogueStart){
-                    StartDialogue();
-                } else if (sentenceField.text == currentInteraction[lineIndex].currentSentence) {
-                    nextArrow.SetActive(true);
-                    if (Input.GetButtonDown("Fire1")){
-                        AudioManager.instance.PlaySFX("UI-Click");
-                        NextDialogueLine();
-                    }
-                } else {
+                else
+                {
                     nextArrow.SetActive(false);
-                    if (Input.GetButtonDown("Fire1")){
+                    if (Input.GetButtonDown("Fire1"))
+                    {
                         AudioManager.instance.PlaySFX("UI-Click");
                         StopAllCoroutines();
                         sentenceField.text = currentInteraction[lineIndex].currentSentence;
                     }
                 }
             }
+        }
+        else
+        {
+            //interactButton.SetActive(false);
         }    
     }
 
@@ -94,8 +93,6 @@ public class HouseInteraction : MonoBehaviour
             didDialogueStart = false;
             dialogueUI.SetActive(false);
             Time.timeScale = 1f;
-            timeToGo = true;
-            Destroy(GetComponent<BoxCollider2D>());
         }
     }
 
@@ -123,7 +120,6 @@ public class HouseInteraction : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision){
         if (collision.gameObject.CompareTag("Player")){
             rangeTrigger = false;
-            timeToGo = false;
         }
     }
 }
