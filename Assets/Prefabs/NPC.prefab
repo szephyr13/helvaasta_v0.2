@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4471472737755807735}
   - component: {fileID: 3954803237504402902}
   - component: {fileID: 16009787580174246}
-  - component: {fileID: 83067507807897074}
+  - component: {fileID: 8158240197914171898}
   m_Layer: 0
   m_Name: NPC
   m_TagString: Untagged
@@ -189,7 +189,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 18.857302, y: 8.565321}
   m_EdgeRadius: 0
---- !u!114 &83067507807897074
+--- !u!114 &8158240197914171898
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -198,7 +198,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3710770165941238410}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d613acd5350264859a6d4dd5ead32576, type: 3}
+  m_Script: {fileID: 11500000, guid: 694a3d3fde1bf46d5b624c7820e936d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueUI: {fileID: 0}
@@ -206,66 +206,5 @@ MonoBehaviour:
   characterName: {fileID: 0}
   sentenceField: {fileID: 0}
   nextArrow: {fileID: 0}
-  initialConversation:
-  - characterName: Nemo
-    faceSprite: {fileID: 21300000, guid: 65d3a420264124d3ba6dbc2df85ea5bd, type: 3}
-    currentSentence: ...
-  - characterName: Nemo
-    faceSprite: {fileID: 21300000, guid: 65d3a420264124d3ba6dbc2df85ea5bd, type: 3}
-    currentSentence: "(Ah\xED est\xE1 Helvaasta. Deber\xEDa presentarme a los guardias.)"
-  - characterName: Vigilante 1
-    faceSprite: {fileID: 21300000, guid: 8ecedaae2c8ff48e0bf45ab411b02f48, type: 3}
-    currentSentence: "Helvaasta est\xE1 aislada. Identificaci\xF3n."
-  - characterName: Nemo
-    faceSprite: {fileID: 21300000, guid: 65d3a420264124d3ba6dbc2df85ea5bd, type: 3}
-    currentSentence: "Soy el detective Nemo, de la polic\xEDa de Breonstl. Vengo
-      a investigar el caso del ni\xF1o desaparecido."
-  - characterName: Vigilante 2
-    faceSprite: {fileID: 21300000, guid: 8ecedaae2c8ff48e0bf45ab411b02f48, type: 3}
-    currentSentence: La placa.
-  - characterName: Nemo
-    faceSprite: {fileID: 21300000, guid: 65d3a420264124d3ba6dbc2df85ea5bd, type: 3}
-    currentSentence: ...
-  - characterName: Vigilante 2
-    faceSprite: {fileID: 21300000, guid: 8ecedaae2c8ff48e0bf45ab411b02f48, type: 3}
-    currentSentence: Correcto.
-  - characterName: Vigilante 1
-    faceSprite: {fileID: 21300000, guid: 8ecedaae2c8ff48e0bf45ab411b02f48, type: 3}
-    currentSentence: "Hay un tel\xE9fono p\xFAblico al este de la plaza, a la que
-      llegar\xE1 tomando el camino de la derecha. "
-  - characterName: Vigilante 1
-    faceSprite: {fileID: 21300000, guid: 8ecedaae2c8ff48e0bf45ab411b02f48, type: 3}
-    currentSentence: "La reconocer\xE1 porque tiene un \xE1rbol en su centro."
-  - characterName: Vigilante 1
-    faceSprite: {fileID: 21300000, guid: 8ecedaae2c8ff48e0bf45ab411b02f48, type: 3}
-    currentSentence: "El tel\xE9fono est\xE1 algo oxidado, pero todav\xEDa cumple
-      su cometido. Es mejor que utilice ese y no le pida a la mujer de la posada
-      el suyo. No se lo dejar\xE1 usar. "
-  - characterName: Vigilante 1
-    faceSprite: {fileID: 21300000, guid: 8ecedaae2c8ff48e0bf45ab411b02f48, type: 3}
-    currentSentence: "La gente de aqu\xED es hura\xF1a y mentirosa, detective. No
-      se f\xEDe de nadie. Un joven ya trat\xF3 de escaparse diciendo que no es residente,
-      pero tenemos su ficha. "
-  - characterName: Vigilante 1
-    faceSprite: {fileID: 21300000, guid: 8ecedaae2c8ff48e0bf45ab411b02f48, type: 3}
-    currentSentence: "\xBFHasta qu\xE9 hora estar\xE1 aqu\xED?"
-  - characterName: Nemo
-    faceSprite: {fileID: 21300000, guid: 65d3a420264124d3ba6dbc2df85ea5bd, type: 3}
-    currentSentence: "Tengo \xF3rdenes de estar de nuevo en comisar\xEDa antes de
-      que acabe el d\xEDa. Deber\xEDa salir de aqu\xED a las diez de la noche. "
-  - characterName: Vigilante 1
-    faceSprite: {fileID: 21300000, guid: 8ecedaae2c8ff48e0bf45ab411b02f48, type: 3}
-    currentSentence: "Muy bien. Le esperaremos y volver\xE1 con nosotros durante
-      nuestro cambio de turno con la patrulla de noche. Inf\xF3rmenos de ello en
-      cuanto acabe. "
-  - characterName: Vigilante 1
-    faceSprite: {fileID: 21300000, guid: 8ecedaae2c8ff48e0bf45ab411b02f48, type: 3}
-    currentSentence: "Si tiene alg\xFAn problema, no dude en hablar con nosotros.
-      Nos encargaremos de poner a la gente en su sitio como sea necesario. "
-  - characterName: Nemo
-    faceSprite: {fileID: 21300000, guid: 65d3a420264124d3ba6dbc2df85ea5bd, type: 3}
-    currentSentence: "Gracias, se\xF1ores. Un placer. "
-  - characterName: Nemo
-    faceSprite: {fileID: 21300000, guid: 4ea6a4ec762104ae9813f9a2bbe015b8, type: 3}
-    currentSentence: "(Si no me equivoco, la plaza est\xE1 por ah\xED, por el camino
-      de la derecha.)"
+  interactButton: {fileID: 0}
+  interactionText: []

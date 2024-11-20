@@ -4,12 +4,9 @@ using TMPro;
 using UnityEngine.UI;
 
 //script para la conversación con los guardias en la escena 2
-public class DialogueOnMap : MonoBehaviour
+public class HouseInteraction : MonoBehaviour
 {
     private bool rangeTrigger;
-    public bool firstEntrance;
-    private bool timeToGo;
-    public bool nextInteraction;
     private bool didDialogueStart = false;
     private int lineIndex;
     private float textSpeed = 0.05f;
@@ -19,57 +16,62 @@ public class DialogueOnMap : MonoBehaviour
     public TMP_Text characterName;
     public TMP_Text sentenceField;
     public GameObject nextArrow;
-    public ConversationPart[] initialConversation;
-    public ConversationPart[] downBoundary;
+    public ConversationPart[] currentInteraction;
+    public ConversationPart[] beforeTelephone;
+    public ConversationPart[] afterTelephone;
+
+    [SerializeField] private GameObject telephone;
+    public bool didNemoInform;
 
     //al iniciar, se indica que se va a tener la primera conversación (firstEntrance) y que se iniciará la conversación según se entre en la zona de trigger (timeToGo)
     void Awake() {
-        firstEntrance = true;
-        nextInteraction = false;
-        timeToGo = false;
+        currentInteraction = beforeTelephone;
+        didNemoInform = telephone.GetComponent<TelephoneInteraction>().didNemoInform;
     }
 
     //se comprueba si se tiene que iniciar la conversación (timeToGo) y, dependiendo de si es la primera conversación o la segunda, se utiliza una función u otra 
     //la diferencia se aprecia en la primera línea tras el else if (nextInteraction&&rangeTrigger) - en próximas versiones se optimizará
     void Update(){
-        if (timeToGo) {
-        } else{
-            if (rangeTrigger && firstEntrance) {
-                if (!didDialogueStart){
+        if (rangeTrigger)
+        {
+            //interactButton.SetActive(true);
+            if (Input.GetButtonDown("Fire1"))
+            {
+                didNemoInform = telephone.GetComponent<TelephoneInteraction>().didNemoInform;
+                if (didNemoInform && currentInteraction == beforeTelephone)
+                {
+                    currentInteraction = afterTelephone;
+                }
+
+                if (!didDialogueStart)
+                {
+                    AudioManager.instance.PlaySFX("UI-Click");
                     StartDialogue();
-                } else if (sentenceField.text == initialConversation[lineIndex].currentSentence) {
+                }
+                else if (sentenceField.text == currentInteraction[lineIndex].currentSentence)
+                {
                     nextArrow.SetActive(true);
-                    if (Input.GetButtonDown("Fire1")){
+                    if (Input.GetButtonDown("Fire1"))
+                    {
                         AudioManager.instance.PlaySFX("UI-Click");
                         NextDialogueLine();
-                    }
-                } else {
-                    nextArrow.SetActive(false);
-                    if (Input.GetButtonDown("Fire1")){
-                        AudioManager.instance.PlaySFX("UI-Click");
-                        StopAllCoroutines();
-                        sentenceField.text = initialConversation[lineIndex].currentSentence;
                     }
                 }
-            } else if (nextInteraction && rangeTrigger) {
-                initialConversation = downBoundary;
-                if (!didDialogueStart){
-                    StartDialogue();
-                } else if (sentenceField.text == initialConversation[lineIndex].currentSentence) {
-                    nextArrow.SetActive(true);
-                    if (Input.GetButtonDown("Fire1")){
-                        AudioManager.instance.PlaySFX("UI-Click");
-                        NextDialogueLine();
-                    }
-                } else {
+                else
+                {
                     nextArrow.SetActive(false);
-                    if (Input.GetButtonDown("Fire1")){
+                    if (Input.GetButtonDown("Fire1"))
+                    {
                         AudioManager.instance.PlaySFX("UI-Click");
                         StopAllCoroutines();
-                        sentenceField.text = initialConversation[lineIndex].currentSentence;
+                        sentenceField.text = currentInteraction[lineIndex].currentSentence;
                     }
                 }
             }
+        }
+        else
+        {
+            //interactButton.SetActive(false);
         }    
     }
 
@@ -85,27 +87,24 @@ public class DialogueOnMap : MonoBehaviour
     //si sigue habiendo líneas, las muestra. si no, declara que la conversación ya se ha tenido y devuelve la función al punto original
     private void NextDialogueLine(){
         lineIndex++;
-        if (lineIndex < initialConversation.Length){
+        if (lineIndex < currentInteraction.Length){
             StartCoroutine(ShowLine());
         } else {
             didDialogueStart = false;
             dialogueUI.SetActive(false);
-            firstEntrance = false;
             Time.timeScale = 1f;
-            timeToGo = true;
-            Destroy(GetComponent<BoxCollider2D>());
         }
     }
 
     ////Corrutina para mostrar poco a poco la frase, con efecto de tipeo.
     private IEnumerator ShowLine(){
-        characterName.text = initialConversation[lineIndex].characterName;
-        characterPlaceholder.GetComponent<Image>().sprite = initialConversation[lineIndex].faceSprite;
+        characterName.text = currentInteraction[lineIndex].characterName;
+        characterPlaceholder.GetComponent<Image>().sprite = currentInteraction[lineIndex].faceSprite;
         sentenceField.text = string.Empty;
 
-        foreach (char ch in initialConversation[lineIndex].currentSentence) {
+        foreach (char ch in currentInteraction[lineIndex].currentSentence) {
             sentenceField.text += ch;
-            AudioManager.instance.PlaySFX("Voice-" + initialConversation[lineIndex].characterName);
+            AudioManager.instance.PlaySFX("Voice-" + currentInteraction[lineIndex].characterName);
             yield return new WaitForSecondsRealtime(textSpeed);
         }
     }
@@ -121,10 +120,6 @@ public class DialogueOnMap : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision){
         if (collision.gameObject.CompareTag("Player")){
             rangeTrigger = false;
-            timeToGo = false;
-            if (firstEntrance == false){
-                nextInteraction = true;
-            }
         }
     }
 }

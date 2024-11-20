@@ -22,9 +22,12 @@ public class TelephoneInteraction : MonoBehaviour
     public ConversationPart[] nextTelephone;
     public ConversationPart[] currentInteraction;
 
+    public bool didNemoInform;
+
     //se determina que la interacción actual es la primera (al inicio)
     void Start(){
         currentInteraction = firstTelephone;
+        didNemoInform = false;
     }
 
     //en cada update se comprueba si se está en el rango de trigger y se pulsa el botón de interacción.
@@ -75,6 +78,7 @@ public class TelephoneInteraction : MonoBehaviour
             dialogueUI.SetActive(false);
             Time.timeScale = 1f;
             currentInteraction = nextTelephone;
+            didNemoInform = true;
         }
     }
 
