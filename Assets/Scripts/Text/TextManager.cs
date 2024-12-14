@@ -9,6 +9,8 @@ using UnityEngine.SceneManagement;
 //en el futuro se tratará de dejar todo el texto escrito en pantalla
 public class TextManager : MonoBehaviour
 {
+    [SerializeField] private FloatSO timeCount;
+    [SerializeField] private Vector3SO nemoPosition;
     private Queue<string> introduction;
     public Dialogue text;
     public TextMeshProUGUI report;
@@ -28,6 +30,10 @@ public class TextManager : MonoBehaviour
         typingOver = true;
         reportOver = false;
         transitionTime = 1f;
+
+        //inicialización
+        timeCount.Value = 3;
+        nemoPosition.Value = Vector3.zero;
     }
 
     //se van mostrando una a una las frases de la Queue

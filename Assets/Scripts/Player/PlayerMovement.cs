@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private float moveSpeed = 5f;
+    [SerializeField] private Vector3SO nemoMapPosition;
 
     private Vector2 movement;
     private Rigidbody2D rb;
@@ -15,15 +16,11 @@ public class PlayerMovement : MonoBehaviour
     private const string lastHorizontal = "LastHorizontal";
     private const string lastVertical = "LastVertical";
 
-    //función para debug, para comprobar la última escena
-    private void Start(){
-        Debug.Log("PlayerMovement knows that last scene was " + ChangeScene.lastSceneIndex);
-    }
-
     //al iniciar, se leen los componentes del jugador relativos a Rigidbody y la animación de movimiento
-    private void Awake(){
+    private void Start(){
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        this.gameObject.transform.position = nemoMapPosition.Value;
     }
 
     //en cada update se leen las entradas de controles y se responde con la animación y el movimiento adecuados

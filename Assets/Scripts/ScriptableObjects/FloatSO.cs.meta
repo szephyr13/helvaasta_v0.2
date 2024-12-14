@@ -1,10 +1,9 @@
 fileFormatVersion: 2
-guid: ea47f8bda5dda49bc842a36152c34a74
+guid: 819ae15b11092455ca675b729ce33ab7
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences:
-  - nemoPosition: {fileID: 11400000, guid: 98d644bd55615406cbb0d174ab5eec0b, type: 2}
+  defaultReferences: []
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

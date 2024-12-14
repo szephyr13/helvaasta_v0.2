@@ -7,6 +7,7 @@ using UnityEngine.UI;
 //VARIANTE DE DIALOGUEONMAP PARA EL TELÉFONO
 public class TelephoneInteraction : MonoBehaviour
 {
+    [SerializeField] TimeManager timeManager;
     private bool rangeTrigger;
     private bool didDialogueStart = false;
     private int lineIndex;
@@ -37,6 +38,10 @@ public class TelephoneInteraction : MonoBehaviour
             //interactButton.SetActive(true);
             if (Input.GetButtonDown("Fire1")){
                 if (!didDialogueStart){
+                    if (!didNemoInform)
+                    {
+                        timeManager.UpdateClock(20);
+                    }
                     AudioManager.instance.PlaySFX("UI-Click");
                     StartDialogue();
                 } else if (sentenceField.text == currentInteraction[lineIndex].currentSentence) {
@@ -79,6 +84,7 @@ public class TelephoneInteraction : MonoBehaviour
             Time.timeScale = 1f;
             currentInteraction = nextTelephone;
             didNemoInform = true;
+
         }
     }
 

@@ -525,17 +525,15 @@ MonoBehaviour:
   interactionText:
   - characterName: Nemo
     faceSprite: {fileID: 21300000, guid: 65d3a420264124d3ba6dbc2df85ea5bd, type: 3}
-    currentSentence: (He anotado todo en la libreta.)
+    currentSentence: (He anotado sus respuestas en la libreta.)
   - characterName: Nemo
     faceSprite: {fileID: 21300000, guid: 4ea6a4ec762104ae9813f9a2bbe015b8, type: 3}
     currentSentence: "(De primeras no parece una mujer sospechosa. No conf\xEDa en
-      la polic\xEDa, es cierto, pero eso no la hace culpable. Se lleva mal con Lauren,
-      de la granja.)"
+      la polic\xEDa, es cierto, pero eso no la hace culpable.)"
   - characterName: Nemo
     faceSprite: {fileID: 21300000, guid: 65d3a420264124d3ba6dbc2df85ea5bd, type: 3}
-    currentSentence: "(El d\xEDa de la desaparici\xF3n trat\xF3 a Jevanna, de la
-      posada, y a Telm, el carpintero. Vio a Fablec, el empleado de Lauren, en la
-      zona del lago.)"
+    currentSentence: "(Cuando el inspector consiga la informaci\xF3n sobre los residentes
+      de Helvaasta, deber\xEDa preguntarle por ella)."
   - characterName: Nemo
     faceSprite: {fileID: 21300000, guid: 4ea6a4ec762104ae9813f9a2bbe015b8, type: 3}
     currentSentence: "(Me ha dicho que vive sola, pero hay varios elementos en su

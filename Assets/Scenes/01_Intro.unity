@@ -171,7 +171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -1078,8 +1078,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 289a2dbc4f3e54467b33a66d48131ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timeCount: {fileID: 11400000, guid: 77ddc2084cabe4609bb982dc72d43af0, type: 2}
+  nemoPosition: {fileID: 11400000, guid: 591e5e8eb122d418f95e519d6bec2b04, type: 2}
   text:
-    name: Narrator
+    name: TypingMachine
     sentences:
     - Breonstl, 1853.
     - "El 4 de abril se denunci\xF3 la desaparici\xF3n de un ni\xF1o delgado de 10

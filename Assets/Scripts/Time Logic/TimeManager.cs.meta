@@ -3,7 +3,10 @@ guid: 0e3107f2078de40a4b23292d52e0d396
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - currentTime: {fileID: 11400000, guid: 77ddc2084cabe4609bb982dc72d43af0, type: 2}
+  - minuteHand: {instanceID: 0}
+  - hourHand: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
