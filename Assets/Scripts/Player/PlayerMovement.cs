@@ -5,6 +5,8 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private float moveSpeed = 5f;
+    [SerializeField] private Vector3SO nemoMapPosition;
+    [SerializeField] private GameObject pauseMenu;
 
     private Vector2 movement;
     private Rigidbody2D rb;
@@ -15,15 +17,11 @@ public class PlayerMovement : MonoBehaviour
     private const string lastHorizontal = "LastHorizontal";
     private const string lastVertical = "LastVertical";
 
-    //función para debug, para comprobar la última escena
-    private void Start(){
-        Debug.Log("PlayerMovement knows that last scene was " + ChangeScene.lastSceneIndex);
-    }
-
     //al iniciar, se leen los componentes del jugador relativos a Rigidbody y la animación de movimiento
-    private void Awake(){
+    private void Start(){
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        this.gameObject.transform.position = nemoMapPosition.Value;
     }
 
     //en cada update se leen las entradas de controles y se responde con la animación y el movimiento adecuados
@@ -36,6 +34,20 @@ public class PlayerMovement : MonoBehaviour
         if (movement != Vector2.zero){
             animator.SetFloat(lastHorizontal, movement.x);
             animator.SetFloat(lastVertical, movement.y);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (!pauseMenu.activeSelf && Time.timeScale != 0)
+            {
+                pauseMenu.SetActive(true);
+                pauseMenu.GetComponentInParent<PauseMenu>().UpdateLog();
+                Time.timeScale = 0f;
+            } else if (pauseMenu.activeSelf)
+            {
+                pauseMenu.SetActive(false);
+                Time.timeScale = 1f;
+            }
         }
     }
 }

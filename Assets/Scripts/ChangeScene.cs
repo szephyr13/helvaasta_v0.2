@@ -21,8 +21,8 @@ public class ChangeScene : MonoBehaviour
             didNemoInform = telephone.GetComponent<TelephoneInteraction>().didNemoInform;
         }
         
-        if(other.tag == "Player") {
-            if (tag == "HouseEntering")
+        if(other.CompareTag("Player")) {
+            if (this.gameObject.CompareTag("HouseEntering"))
             {
                 if (didNemoInform)
                 {

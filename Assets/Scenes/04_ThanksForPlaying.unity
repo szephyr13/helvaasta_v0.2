@@ -173,7 +173,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -500,8 +500,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -78, y: -28}
-  m_SizeDelta: {x: 745.2302, y: 204.4854}
+  m_AnchoredPosition: {x: -163.5876, y: 27.957}
+  m_SizeDelta: {x: 365.869, y: 92.5713}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &975987382
 MonoBehaviour:
@@ -524,8 +524,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Gracias por jugar a la demo de Helvaasta. En la versi\xF3n completa se
-    a\xF1adir\xE1 a los ocho personajes restantes y m\xE1s funciones de jugabilidad.
-    \n\nEl juego final tiene prevista su publicaci\xF3n para la primavera de 2025. "
+    a\xF1adir\xE1 a los ocho personajes restantes, sus correspondientes cuatro interrogatorios
+    y m\xE1s funciones de jugabilidad. \n\nEl juego final tiene prevista su publicaci\xF3n
+    para finales de 2026 o principios de 2027. "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4cfd604d5eca248839d0989bf1bc6d80, type: 2}
   m_sharedMaterial: {fileID: 1384446283936624288, guid: 4cfd604d5eca248839d0989bf1bc6d80, type: 2}
@@ -552,11 +553,11 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40
+  m_fontSize: 12.95
   m_fontSizeBase: 40
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 12
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 1
@@ -588,7 +589,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -400.28436, y: 0, z: 0, w: -65.61392}
+  m_margin: {x: -0.3886723, y: 0, z: 0, w: 1.695343}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -891,11 +892,11 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25
+  m_fontSize: 22.65
   m_fontSizeBase: 25
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 12
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
@@ -1188,10 +1189,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25
+  m_fontSize: 20.15
   m_fontSizeBase: 25
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -1274,8 +1275,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -57.461, y: -369}
-  m_SizeDelta: {x: 400.004, y: 33.1393}
+  m_AnchoredPosition: {x: 19.190018, y: -105.97467}
+  m_SizeDelta: {x: 309.624, y: 21.0887}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1685442132
 MonoBehaviour:
@@ -1407,9 +1408,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -47, y: -464}
-  m_SizeDelta: {x: 76.9182, y: 27.1642}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 10.7545, y: -147.1924}
+  m_SizeDelta: {x: 60.0473, y: 23.549}
+  m_Pivot: {x: 0.5, y: 0.49999976}
 --- !u!114 &1984112250
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1538,8 +1539,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 100, y: 25}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 111.73151, y: 7.2351074}
+  m_SizeDelta: {x: 223.463, y: 14.4702}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2015609031
 MonoBehaviour:
@@ -1561,7 +1562,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "  Versi\xF3n: 0.2.1 (demo - TFG PEC2)"
+  m_text: "  Versi\xF3n: 0.2.2 (demo - TFG PEC3)"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4cfd604d5eca248839d0989bf1bc6d80, type: 2}
   m_sharedMaterial: {fileID: 1384446283936624288, guid: 4cfd604d5eca248839d0989bf1bc6d80, type: 2}
@@ -1588,11 +1589,11 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 12
+  m_fontSize: 13.15
   m_fontSizeBase: 12
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 12
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 1
@@ -1624,7 +1625,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -12.206238, w: 0}
+  m_margin: {x: 0, y: 0, z: -0.80991364, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

@@ -15,6 +15,7 @@ public class DialogueKaida : MonoBehaviour
     private int lineIndex;
     private float textSpeed = 0.05f;
 
+    [SerializeField] private TimeManager timeManager;
     [SerializeField] private GameObject dialogueUI;
     [SerializeField] private GameObject characterPlaceholder;
     [SerializeField] private TMP_Text characterName;
@@ -143,6 +144,7 @@ public class DialogueKaida : MonoBehaviour
         if (button.name == "Button 1")
         {
             currentConversation = alibiCheck;
+            timeManager.UpdateClock(10);
             optionMode = false;
             Destroy(button);
             return;
@@ -150,6 +152,7 @@ public class DialogueKaida : MonoBehaviour
         else if (button.name == "Button 2")
         {
             currentConversation = unknownBoy;
+            timeManager.UpdateClock(5);
             optionMode = false;
             Destroy(button);
             return;
@@ -157,6 +160,7 @@ public class DialogueKaida : MonoBehaviour
         else if (button.name == "Button 3")
         {
             currentConversation = before25th;
+            timeManager.UpdateClock(2);
             optionMode = false;
             Destroy(button);
             return;
@@ -164,6 +168,7 @@ public class DialogueKaida : MonoBehaviour
         else if (button.name == "Button 4")
         {
             currentConversation = helpWithInvestigation;
+            timeManager.UpdateClock(5);
             optionMode = false;
             Destroy(button);
             return;
@@ -171,6 +176,7 @@ public class DialogueKaida : MonoBehaviour
         else if (button.name == "Button 5")
         {
             currentConversation = thankYou;
+            timeManager.UpdateClock(0);
             optionMode = false;
             Destroy(button);
             firstEntrance = false;
