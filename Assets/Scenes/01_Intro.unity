@@ -1080,6 +1080,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeCount: {fileID: 11400000, guid: 77ddc2084cabe4609bb982dc72d43af0, type: 2}
   nemoPosition: {fileID: 11400000, guid: 591e5e8eb122d418f95e519d6bec2b04, type: 2}
+  agendaInfo: {fileID: 11400000, guid: 784d2f4fccc604927af806bc984140e2, type: 2}
   text:
     name: TypingMachine
     sentences:

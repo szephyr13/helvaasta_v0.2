@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81771c6c957f847dbb96fb80318bc47d, type: 3}
   m_Name: NemoMapPosition
   m_EditorClassIdentifier: 
-  vector: {x: 33.17514, y: 34.65716, z: 0}
+  vector: {x: 35.17908, y: 41.1692, z: 0}

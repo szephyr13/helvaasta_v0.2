@@ -8,6 +8,7 @@ using UnityEngine.UI;
 public class TelephoneInteraction : MonoBehaviour
 {
     [SerializeField] TimeManager timeManager;
+    [SerializeField] BoolSO agendaInfo;
     private bool rangeTrigger;
     private bool didDialogueStart = false;
     private int lineIndex;
@@ -83,6 +84,7 @@ public class TelephoneInteraction : MonoBehaviour
             dialogueUI.SetActive(false);
             Time.timeScale = 1f;
             currentInteraction = nextTelephone;
+            agendaInfo.Log0320PM = true;
             didNemoInform = true;
 
         }

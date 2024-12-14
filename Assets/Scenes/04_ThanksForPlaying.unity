@@ -524,8 +524,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Gracias por jugar a la demo de Helvaasta. En la versi\xF3n completa se
-    a\xF1adir\xE1 a los ocho personajes restantes y m\xE1s funciones de jugabilidad.
-    \n\nEl juego final tiene prevista su publicaci\xF3n para la primavera de 2025. "
+    a\xF1adir\xE1 a los ocho personajes restantes, sus correspondientes cuatro interrogatorios
+    y m\xE1s funciones de jugabilidad. \n\nEl juego final tiene prevista su publicaci\xF3n
+    para finales de 2026 o principios de 2027. "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4cfd604d5eca248839d0989bf1bc6d80, type: 2}
   m_sharedMaterial: {fileID: 1384446283936624288, guid: 4cfd604d5eca248839d0989bf1bc6d80, type: 2}
@@ -552,7 +553,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 14.9
+  m_fontSize: 12.95
   m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 1

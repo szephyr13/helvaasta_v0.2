@@ -11,6 +11,7 @@ public class TextManager : MonoBehaviour
 {
     [SerializeField] private FloatSO timeCount;
     [SerializeField] private Vector3SO nemoPosition;
+    [SerializeField] private BoolSO agendaInfo;
     private Queue<string> introduction;
     public Dialogue text;
     public TextMeshProUGUI report;
@@ -34,6 +35,8 @@ public class TextManager : MonoBehaviour
         //inicialización
         timeCount.Value = 3;
         nemoPosition.Value = Vector3.zero;
+        agendaInfo.Log0300PM = false;
+        agendaInfo.Log0320PM = false;
     }
 
     //se van mostrando una a una las frases de la Queue

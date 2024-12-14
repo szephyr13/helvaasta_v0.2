@@ -6,6 +6,7 @@ using UnityEngine.UI;
 //script para la conversación con los guardias en la escena 2
 public class DialogueOnMap : MonoBehaviour
 {
+    [SerializeField] private BoolSO agendaInfo;
     private bool rangeTrigger;
     public bool firstEntrance;
     private bool timeToGo;
@@ -91,6 +92,7 @@ public class DialogueOnMap : MonoBehaviour
             didDialogueStart = false;
             dialogueUI.SetActive(false);
             firstEntrance = false;
+            agendaInfo.Log0300PM = true;
             Time.timeScale = 1f;
             timeToGo = true;
             Destroy(GetComponent<BoxCollider2D>());
