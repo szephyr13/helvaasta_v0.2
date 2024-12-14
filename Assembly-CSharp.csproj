@@ -66,6 +66,7 @@
     <Compile Include="Assets/Scripts/Text/DialogueOnMap.cs" />
     <Compile Include="Assets/Scripts/Text/ConversationPart.cs" />
     <Compile Include="Assets/Scripts/Text/HouseInteraction.cs" />
+    <Compile Include="Assets/Scripts/Time Logic/TimeManager.cs" />
     <Compile Include="Assets/Scripts/Player/NemoStartPosition.cs" />
     <Compile Include="Assets/Scripts/Menu/OptionsMenu.cs" />
     <Compile Include="Assets/Scripts/Audio/AudioManager.cs" />
@@ -74,6 +75,7 @@
     <Compile Include="Assets/Scripts/Menu/ThanksForPlaying.cs" />
     <Compile Include="Assets/Scripts/Text/TelephoneInteraction.cs" />
     <Compile Include="Assets/Scripts/Text/DialogueKaida.cs" />
+    <Compile Include="Assets/Scripts/Time Logic/Clock.cs" />
     <Compile Include="Assets/Scripts/Text/Thinking.cs" />
     <Compile Include="Assets/Scripts/ChangeScene.cs" />
     <Compile Include="Assets/Scripts/Text/Dialogue.cs" />

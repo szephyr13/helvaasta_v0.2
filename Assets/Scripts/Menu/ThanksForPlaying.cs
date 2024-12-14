@@ -16,7 +16,7 @@ public class ThanksForPlaying : MonoBehaviour
         StartCoroutine(LoadScene(0));
     }
 
-    //en el botón de salir se para tod y se sale de la aplicación 
+    //en el botón de salir se para la música y se sale de la aplicación 
     //en el futuro se podría aplicar una Coroutine para que suene el efecto de sonido
     public void ExitGame () {
         AudioManager.instance.BGMSource.Stop();
