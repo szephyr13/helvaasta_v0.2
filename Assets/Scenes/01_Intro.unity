@@ -1102,11 +1102,11 @@ MonoBehaviour:
       su vez revisar\xEDa la presencia de cada uno de los habitantes del barrio.
       Aquel que huyese ser\xEDa detenido e interrogado como presunto culpable."
     - "El 27 de abril, el detective Nemo, de 36 a\xF1os de edad y con una carrera
-      brillante desde sus comienzos fue asignado a la fase inicial de la investigaci\xF3n
+      brillante desde sus comienzos, fue asignado a la fase inicial de la investigaci\xF3n
       en Helvaasta. "
   report: {fileID: 992848047}
   textSpeed: 0
-  typingOver: 0
+  typingOver: 1
   reportOver: 0
   storedText: 
   transition: {fileID: 1223998069}

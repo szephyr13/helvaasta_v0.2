@@ -1562,7 +1562,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "  Versi\xF3n: 0.2.2 (demo - TFG PEC3)"
+  m_text: " Versi\xF3n: 0.2.3 (demo - TFG)"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4cfd604d5eca248839d0989bf1bc6d80, type: 2}
   m_sharedMaterial: {fileID: 1384446283936624288, guid: 4cfd604d5eca248839d0989bf1bc6d80, type: 2}
@@ -1589,7 +1589,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 13.15
+  m_fontSize: 14.45
   m_fontSizeBase: 12
   m_fontWeight: 400
   m_enableAutoSizing: 1

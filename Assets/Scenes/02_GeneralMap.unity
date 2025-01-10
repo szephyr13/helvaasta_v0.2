@@ -1068,7 +1068,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.11371899}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1079,7 +1079,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1, y: 1.227438}
   m_EdgeRadius: 0
 --- !u!114 &162570236
 MonoBehaviour:
@@ -8235,7 +8235,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: 5c5f1a98879cb484a92691255fdccd88, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -8477,7 +8477,7 @@ MonoBehaviour:
     currentSentence: "Y por favor, si tienes que echarte a adivinar, no escojas a
       una mujer anciana. As\xED no nos vamos a ganar la simpat\xEDa de nadie. "
   - characterName: Nemo
-    faceSprite: {fileID: 21300000, guid: 65d3a420264124d3ba6dbc2df85ea5bd, type: 3}
+    faceSprite: {fileID: 21300000, guid: 2730f97b11f054405abffa410d875d22, type: 3}
     currentSentence: ...
   - characterName: Inspector
     faceSprite: {fileID: 21300000, guid: 8ecedaae2c8ff48e0bf45ab411b02f48, type: 3}
